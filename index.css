@@ -1,0 +1,7305 @@
+@import url('https://fonts.googleapis.com/css2?family=Kalnia:wght@100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Kalnia:wght@100..700&display=swap');
+*{
+  margin:0;
+  padding:0;
+}
+li{
+    list-style-type:none;
+    font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+   
+    }
+
+    a{
+        text-decoration: none;
+    }
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 1.5rem;
+        background-color: #b61c1c;
+        font-size:2rem;
+    } 
+.nav-logo-mobile{
+    display:none;
+}
+
+
+
+    #contactLink{
+        position: absolute;
+        margin-left:10vw;
+        margin-top:-1%;
+    }
+
+    #bookLink{
+        position: absolute;
+        margin-left:27%;
+        margin-top:-3%;
+        background-color: #fff;
+        padding: 1% 1% 1% 1%;
+        font-size:1rem;
+       
+    }
+    #nav-logo-desktop{
+        position: absolute;
+        margin-left:36%;
+        font-size: 6rem;
+        font-weight: 500;
+       color:#ffffff;
+       font-weight: lighter;
+       font-family: 'Pinyon Script', cursive;
+
+    }
+
+    
+
+    .hamburger {
+  display: none;
+    }
+
+    .bar {
+        display: block;
+        width: 25px;
+        height: 3px;
+        margin: 5px auto;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        background-color: #101010;
+    }
+
+
+    .nav-menu {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .nav-item {
+        margin-left: 5rem;
+    }
+    
+    .nav-link{
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: #475569;
+    }
+    
+    .nav-link:hover{
+        color: #588d8f;
+    }
+    
+    
+
+    #homeLink{
+        
+        margin-top:-2%;
+        margin-left:-60%;
+    }
+
+    #projectLink{
+        margin-left:-50%;
+    }
+
+    #aboutLink{
+        margin-left:-90%;
+    }
+
+    #contactLink{
+        margin-top:-2%;
+        margin-left:20%;
+    }
+
+
+@media screen and (max-width:79px) {
+
+
+ .logoImg{
+    position: absolute;
+    margin-top:-53vh !important;
+    margin-left:-46vw;
+   height:10vh;
+   width:90vw;
+   opacity: 4;
+   
+
+ }
+
+  
+ .container {
+   
+    position: absolute;
+    margin-top:2vh;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+    overflow: hidden;
+    opacity: 4;
+  }
+  
+  
+  .blob {
+   
+    position: absolute;
+    margin-top:-35vh;
+    opacity: 0.5;
+    width: 400px;
+    aspect-ratio: 1/1;
+    animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+      alternate forwards;
+    filter: blur(40px);
+    z-index: -1;
+    background: linear-gradient(
+      47deg,
+      rgb(20, 17, 18) 21%,
+      rgb(203, 226, 227) 67%,
+      rgb(71, 68, 74) 81%
+    );
+  
+    /*  Optional  */
+    /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+      inset 100px 100px 17px 0px #66319f; */
+  }
+  
+  @keyframes animate {
+    0% {
+      translate: 40% -25%;
+      border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+    }
+    50% {
+      translate: 0% 13%;
+      border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+      rotate: 41deg;
+      scale: 1.15;
+    }
+    100% {
+      translate: -45% 39%;
+      border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+      rotate: -60deg;
+      scale: 1.05;
+    }
+  }
+  
+  
+#dskTopHeader{
+    display:none;
+}
+
+#mobileNavLinks{
+    display:none;
+   }
+
+   nav{
+    height:1vh;
+    background-color: rgba(233, 233, 233, 0.534);
+   
+}
+
+#dskTopLogo{
+    display:none;
+}
+#mobileLogo{ 
+    display:none;
+    position: absolute;
+      margin-top:6vh;
+      margin-left:8vw;
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 300;
+      color:rgb(126, 126, 127);
+      font-size:0.80rem;
+}
+.navbar{
+    background-color: #ffffff5e;
+}
+
+
+        .nav-menu {
+            position: fixed;
+            left: -100%;
+            top: 2rem;
+            flex-direction: column;
+            background-color: #fff !important;
+            height:60vh !important;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow:
+                0 10px 27px rgba(0, 0, 0, 0.05);
+                z-index:1 !important;
+                font-weight: lighter;
+        }
+    
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .nav-item {
+            margin: 2.5rem 0;
+            margin-left:40vw;
+            font-size: 0.50rem;
+            font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+            font-weight: lighter !important;
+        }
+    
+        .hamburger {
+            display: block;
+            cursor: pointer;
+        }
+.bar{
+    background-color: #868686a8;
+}
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+#nav-logo-desktop{
+    display:none;
+}
+        #alchBrand{
+            margin-top: -59% !important;
+            margin-left:-9% !important;
+            width:10% !important;
+            height:10% !important;
+           }
+
+           #bodycontact{
+            margin-left:26vw;
+           }
+
+        #homeLink{
+            position: absolute;
+            margin-top:-12vh;
+            margin-left:-48vw !important;
+            font-size: 1rem;
+            font-weight: lighter;
+            color:rgb(68, 68, 68);
+        }
+
+        #aboutLink{
+            position: absolute;
+            margin-top:-17vh;
+            margin-left:-45vw !important;
+            font-size: 1rem;
+            font-weight: lighter;
+            color:rgb(68, 68, 68);
+        }
+
+     #missionLink{
+            position: absolute;
+            margin-top:-21vh;
+            margin-left:-45vw !important;
+            font-size: 1rem;
+            font-weight: lighter;
+            color:rgb(68, 68, 68);
+        }
+
+      
+
+        #bookLink{
+            margin-top:-26vh;
+            margin-left:-48vw !important;
+            font-size:.70rem;
+             padding:2% 10% 2% 10%;
+             border-style: groove;
+             border-color: #918f8f;
+             background-color:#fff;
+             border-radius: 25px ;
+             border-width:1px;
+              font-family: 'Pinyon Script', cursive;
+              color:#3d3d3d !important;
+             
+            }
+     
+           
+
+        #contactLink{
+           display:none;
+
+        }
+
+        span{
+            color:#475569;
+        }
+
+    #alchDesignLogo{
+        margin-top:-12vh !important;
+    }
+
+.nav-logo-mobile{
+    height: 50vh !important;
+}
+
+#mainNav{
+    display:none;
+}
+
+
+
+.logo{
+    display:none;
+    position: absolute;
+    margin-top:6vh;
+    margin-left:10vw;
+    color:rgba(94, 103, 111, 0.808);
+
+}
+                                                                            
+ h1{
+    position: absolute;
+  margin-top:-40vh;
+  margin-left:10vw;
+  font-size:0.70rem;
+    z-index:1;
+    color:#777777;
+    font-weight:lighter;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    width:30vw;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transition: opacity 5s;
+    z-index:-1;
+  
+   }
+
+   @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+  #headerText1{
+    position:absolute;
+   margin-top:-150vh;
+    margin-left:6vw;
+    width:99vw;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    color:white;
+    font-size:0.70rem;
+    
+  }
+
+   #headerText2{
+    
+    position:absolute;
+    margin-top:-92vh;
+     margin-left:12vw;
+     width:80vw;
+     font-family: "Cormorant Garamond", serif;
+     font-weight: 300;
+      text-align: left;
+      font-size:0.43rem;
+      color:rgb(78, 78, 78);
+     font-weight:lighter;
+     z-index:1;
+     animation: fadeInAnimation ease 5s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+     opacity: 0;
+     transition: opacity 5s;
+     z-index:1;
+     
+    }
+     
+    
+  
+  
+  .mobileHeaderUnderlay{
+   
+    height:100vh;
+ 
+    z-index:-1;
+  }
+
+  .underlay{
+    height:5vh;
+    width:70vw;
+   
+  }
+
+  #underlay1{
+    position:absolute;
+    margin-top:15vh;
+       height:30vh;
+  }
+
+   #underlay2{
+    display:none;
+    position: absolute;
+    margin-top:23vh;
+    height:10vh;
+    width:100vw;
+    background-color:gray;
+
+   }
+   
+#dskTopSlider{
+    display:none;
+}
+
+  
+
+  img{height:10vh;
+      width:80vw;
+     }
+
+     #fadeImgOne{
+        display:none;}
+     
+
+     #mobileFadeImgOne{
+
+        width:30vw;
+        height:60vh;
+     }
+     
+#sectionTwo{
+    
+  margin-top:-70vh;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  z-index:1;
+
+}
+  #sectionThree{
+    margin-top:-42vh;
+    z-index:1;
+   
+  }
+
+  /* Slideshow container */
+.slideshow-container {
+    position: absolute;
+    margin-top:-50vh;
+  margin-left:-3vw;
+  height:30vh;
+  max-width: 100vw;
+  
+  }
+
+#slideOne{
+  height:10vh !important;
+}
+
+#slideTwo{
+   height:10vh;
+ }
+
+
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  margin-top:-120vh !important;
+
+  width: auto;
+ 
+  padding: 6px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 10px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index:1;
+ 
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-top:-40vh;
+  margin-left:83vw;
+   
+  border-radius: 3px 0 0 3px;
+}
+
+  .prev{ 
+    margin-top:-40vh;
+    margin-left:0vw;
+   
+  }
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  display:none;
+  margin-top:-30vh;
+margin-left:63vw;
+  width:30vw;
+  font-size:14px;
+  
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    display:none;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-top:130vh !important;
+  margin-left:-30vw;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+  #stage {
+    margin: 1em auto;
+    width: 382px;
+    height: 6vh;
+  }
+
+.fadeImg{
+  margin-top:-120vh;
+ margin-left:7vw;
+  height:2vh;
+  width:80vw;
+  z-index:-1;
+}
+
+  #stage a {
+    position: absolute;
+  }
+  #stage a img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+
+  #stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+  #stage a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #stage a:nth-of-type(n+3) {
+    display: none;
+  }
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+
+  .offerHeader{
+    font-size:1rem;
+    margin-left:6vw;
+    color:rgb(82, 82, 82);
+    padding:10%;
+
+  }
+
+  .offerText{
+    margin-left:2vw;
+      width:99vw;
+      text-align: left;
+      font-size:0.56rem;
+      z-index:1;
+     
+      font-weight:lighter;
+      width:100vw;
+      padding:10%;
+     
+  }
+  
+#offerHeader1{
+    margin-top:-22vh;
+    margin-left:-7vw;
+    font-weight: lighter;
+
+}
+
+
+  .projectTitle{
+    display:none;
+  margin-top:10vh;
+  margin-left:70vw;
+  font-size:2.5rem;
+  font-family: "Cormorant Garamond", serif;
+ 
+  font-weight:lighter;
+  color:gray;
+  
+}
+
+  .price{
+    display:none;
+    margin-top:4vh;
+    margin-left:75vw;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-size:2.5rem;
+   
+  }
+footer{
+    height:400px;
+  margin-top:500px;
+  background-color:rgb(43, 56, 58);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+
+}
+}
+
+
+
+
+
+
+
+
+@media screen and (min-width:80px) and (max-width:90px) {
+
+ 
+
+
+  .logoImg{
+    position: absolute;
+    margin-top:-53vh !important;
+    margin-left:-46vw;
+   height:10vh;
+   width:90vw;
+   opacity: 4;
+   
+
+ }
+
+  
+
+
+  .container {
+   
+    position: absolute;
+    margin-top:2vh;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    place-items: center;
+    isolation: isolate;
+    overflow: hidden;
+    opacity: 4;
+  }
+  
+  
+  .blob {
+   
+    position: absolute;
+    margin-top:-35vh;
+    opacity: 0.5;
+    width: 400px;
+    aspect-ratio: 1/1;
+    animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+      alternate forwards;
+    filter: blur(40px);
+    z-index: -1;
+    background: linear-gradient(
+      47deg,
+      rgb(20, 17, 18) 21%,
+      rgb(203, 226, 227) 67%,
+      rgb(71, 68, 74) 81%
+    );
+  
+    /*  Optional  */
+    /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+      inset 100px 100px 17px 0px #66319f; */
+  }
+  
+  @keyframes animate {
+    0% {
+      translate: 40% -25%;
+      border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+    }
+    50% {
+      translate: 0% 13%;
+      border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+      rotate: 41deg;
+      scale: 1.15;
+    }
+    100% {
+      translate: -45% 39%;
+      border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+      rotate: -60deg;
+      scale: 1.05;
+    }
+  }
+  
+  
+#dskTopHeader{
+    display:none;
+}
+
+#mobileNavLinks{
+    display:none;
+   }
+
+   nav{
+    height:1vh;
+    background-color: rgba(233, 233, 233, 0.534);
+   
+}
+
+#dskTopLogo{
+    display:none;
+}
+#mobileLogo{ 
+    display:none;
+    position: absolute;
+      margin-top:6vh;
+      margin-left:8vw;
+      font-family: "Cormorant Garamond", serif;
+      font-weight: 300;
+      color:rgb(126, 126, 127);
+      font-size:0.80rem;
+}
+.navbar{
+    background-color: #ffffff5e;
+}
+
+
+        .nav-menu {
+            position: fixed;
+            left: -100%;
+            top: 2rem;
+            flex-direction: column;
+            background-color: #fff !important;
+            height:16vh !important;
+            width: 100%;
+            border-radius: 10px;
+            text-align: center;
+            transition: 0.3s;
+            box-shadow:
+                0 10px 27px rgba(0, 0, 0, 0.05);
+                z-index:1 !important;
+                font-weight: lighter;
+        }
+    
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .nav-item {
+            margin: 2.5rem 0;
+            margin-left:40vw;
+            font-size: 0.50rem;
+            font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+            font-weight: lighter !important;
+        }
+    
+        .hamburger {
+            display: block;
+            cursor: pointer;
+        }
+.bar{
+    background-color: #868686a8;
+}
+        .hamburger.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+    
+        .hamburger.active .bar:nth-child(1) {
+            transform: translateY(8px) rotate(45deg);
+        }
+    
+        .hamburger.active .bar:nth-child(3) {
+            transform: translateY(-8px) rotate(-45deg);
+        }
+
+#nav-logo-desktop{
+    display:none;
+}
+        #alchBrand{
+            margin-top: -59% !important;
+            margin-left:-9% !important;
+            width:10% !important;
+            height:10% !important;
+           }
+
+           #bodycontact{
+            margin-left:26vw;
+           }
+
+        #homeLink{
+            position: absolute;
+            margin-top:-12vh;
+            margin-left:-48vw !important;
+            font-size: 1rem;
+            font-weight: lighter;
+            color:rgb(68, 68, 68);
+        }
+
+        #aboutLink{
+            position: absolute;
+            margin-top:-17vh;
+            margin-left:-45vw !important;
+            font-size: 1rem;
+            font-weight: lighter;
+            color:rgb(68, 68, 68);
+        }
+
+     #missionLink{
+            position: absolute;
+            margin-top:-21vh;
+            margin-left:-45vw !important;
+            font-size: 1rem;
+            font-weight: lighter;
+            color:rgb(68, 68, 68);
+        }
+
+      
+
+        #bookLink{
+            margin-top:-26vh;
+            margin-left:-48vw !important;
+            font-size:.70rem;
+             padding:2% 10% 2% 10%;
+             border-style: groove;
+             border-color: #918f8f;
+             background-color:#fff;
+             border-radius: 25px ;
+             border-width:1px;
+              font-family: 'Pinyon Script', cursive;
+              color:#3d3d3d !important;
+             
+            }
+     
+           
+
+        #contactLink{
+           display:none;
+
+        }
+
+        span{
+            color:#475569;
+        }
+
+    #alchDesignLogo{
+        margin-top:-12vh !important;
+    }
+
+.nav-logo-mobile{
+    height: 50vh !important;
+}
+
+#mainNav{
+    display:none;
+}
+
+
+
+.logo{
+    display:none;
+    position: absolute;
+    margin-top:6vh;
+    margin-left:10vw;
+    color:rgba(94, 103, 111, 0.808);
+
+}
+                                                                            
+ h1{
+    position: absolute;
+  margin-top:-40vh;
+  margin-left:10vw;
+  font-size:0.90rem;
+    z-index:1;
+    color:#777777;
+    font-weight:lighter;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    width:90vw;
+    animation: fadeInAnimation ease 5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    opacity: 0;
+    transition: opacity 5s;
+    z-index:-1;
+  
+   }
+
+   @keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+  #headerText1{
+    position:absolute;
+   margin-top:-150vh;
+    margin-left:6vw;
+    width:99vw;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    color:white;
+    font-size:0.70rem;
+    
+  }
+
+   #headerText2{
+    
+    position:absolute;
+    margin-top:-92vh;
+     margin-left:2vw;
+     width:100vw;
+     font-family: "Cormorant Garamond", serif;
+     font-weight: 300;
+      text-align: left;
+      font-size:0.56rem;
+      color:rgb(78, 78, 78);
+     font-weight:lighter;
+     z-index:1;
+     animation: fadeInAnimation ease 5s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+     opacity: 0;
+     transition: opacity 5s;
+     
+    }
+     
+    
+  
+  
+  .mobileHeaderUnderlay{
+   
+    height:100vh;
+ 
+    z-index:-1;
+  }
+
+  .underlay{
+    height:5vh;
+    width:70vw;
+   
+  }
+
+  #underlay1{
+    position:absolute;
+    margin-top:15vh;
+       height:30vh;
+  }
+
+   #underlay2{
+    display:none;
+    position: absolute;
+    margin-top:23vh;
+    height:10vh;
+    width:100vw;
+    background-color:gray;
+
+   }
+   
+#dskTopSlider{
+    display:none;
+}
+
+  
+
+  img{height:10vh;
+      width:80vw;
+     }
+
+     #fadeImgOne{
+        display:none;}
+     
+
+     #mobileFadeImgOne{
+
+        width:30vw;
+        height:60vh;
+     }
+     
+#sectionTwo{
+    
+  margin-top:-67vh;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+}
+  #sectionThree{
+    margin-top:-38vh;
+   
+  }
+
+  /* Slideshow container */
+.slideshow-container {
+    position: absolute;
+    margin-top:-50vh;
+  margin-left:-3vw;
+  height:30vh;
+  max-width: 100vw;
+  
+  }
+
+#slideOne{
+  height:10vh !important;
+}
+
+#slideTwo{
+   height:10vh;
+ }
+
+
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  margin-top:-120vh !important;
+
+  width: auto;
+ 
+  padding: 6px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 14px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index:1;
+ 
+}
+
+/* Position the "next button" to the right */
+.next {
+  margin-top:-40vh;
+  margin-left:83vw;
+   
+  border-radius: 3px 0 0 3px;
+}
+
+  .prev{ 
+    margin-top:-40vh;
+    margin-left:0vw;
+   
+  }
+
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  display:none;
+  margin-top:-30vh;
+margin-left:63vw;
+  width:30vw;
+  font-size:14px;
+  
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+
+.dot {
+    display:none;
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin-top:130vh !important;
+  margin-left:-30vw;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+  #stage {
+    margin: 1em auto;
+    width: 382px;
+    height: 6vh;
+  }
+
+.fadeImg{
+  margin-top:-120vh;
+ margin-left:7vw;
+  height:2vh;
+  width:80vw;
+  z-index:-1;
+}
+
+  #stage a {
+    position: absolute;
+  }
+  #stage a img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+
+  #stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+  #stage a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #stage a:nth-of-type(n+3) {
+    display: none;
+  }
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+
+  .offerHeader{
+    font-size:1.2rem;
+    margin-left:6vw;
+    color:rgb(82, 82, 82);
+    padding:10%;
+
+  }
+
+  .offerText{
+    margin-left:2vw;
+      width:99vw;
+      text-align: left;
+      font-size:0.56rem;
+      z-index:1;
+     
+      font-weight:lighter;
+      width:100vw;
+      padding:10%;
+     
+  }
+  
+#offerHeader1{
+    margin-top:-10vh;
+    margin-left:-5vw;
+
+}
+
+
+  .projectTitle{
+    display:none;
+  margin-top:10vh;
+  margin-left:70vw;
+  font-size:2.5rem;
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+  font-weight:lighter;
+  color:gray;
+  
+}
+
+  .price{
+    display:none;
+    margin-top:4vh;
+    margin-left:75vw;
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;
+    font-size:2.5rem;
+   
+  }
+footer{
+    height:400px;
+  margin-top:500px;
+  background-color:rgb(43, 56, 58);
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+
+}
+   }
+
+@media screen and (min-width:91px) and (max-width:104px) {
+
+   body{
+    font-family: "Cormorant Garamond", serif;
+  font-weight: 300;
+   }
+
+    
+   #lgMobileContainer{
+    display:none;
+   }
+      
+       
+      
+        .container {
+          position: absolute;
+          margin-top:-0.50vh;
+          width: 100%;
+          height: 36vh;
+          position: relative;
+          display: grid;
+          place-items: center;
+          isolation: isolate;
+          overflow: hidden;
+        }
+        
+        
+        .blob {
+          position: absolute;
+          margin-top:-35vh;
+          opacity: 0.5;
+          width: 400px;
+          aspect-ratio: 1/1;
+          animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+            alternate forwards;
+          filter: blur(40px);
+          z-index: -1;
+          background: linear-gradient(
+            47deg,
+            rgb(20, 17, 18) 21%,
+            rgb(203, 226, 227) 67%,
+            rgb(71, 68, 74) 81%
+          );
+        
+          /*  Optional  */
+          /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+            inset 100px 100px 17px 0px #66319f; */
+        }
+        
+        @keyframes animate {
+          0% {
+            translate: 40% -25%;
+            border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+          }
+          50% {
+            translate: 0% 13%;
+            border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+            rotate: 41deg;
+            scale: 1.15;
+          }
+          100% {
+            translate: -45% 39%;
+            border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+            rotate: -60deg;
+            scale: 1.05;
+          }
+        }
+        
+        
+      #dskTopHeader{
+          display:none;
+      }
+      
+      #mobileNavLinks{
+          display:none;
+         }
+      
+         nav{
+          height:1vh;
+          background-color: rgba(233, 233, 233, 0.534);
+         
+      }
+
+      .logoImg{
+        position: absolute;
+        margin-top:-16vh;
+        margin-left:-48vw;
+        height:12vh;
+        width:100vw;
+        opacity: 0.5;
+      }
+      
+      #dskTopLogo{
+          display:none;
+      }
+      #mobileLogo{ 
+          display:none;
+          position: absolute;
+            margin-top:6vh;
+            margin-left:8vw;
+            font-family: "Kalnia", serif;
+            color:rgb(126, 126, 127);
+            font-size:0.80rem;
+      }
+      .navbar{
+          background-color: #ffffff5e;
+      }
+      
+      
+              .nav-menu {
+                  position: fixed;
+                  left: -100%;
+                  top: 2rem;
+                  flex-direction: column;
+                  background-color: #fff !important;
+                  height:16vh !important;
+                  width: 100%;
+                  border-radius: 10px;
+                  text-align: center;
+                  transition: 0.3s;
+                  box-shadow:
+                      0 10px 27px rgba(0, 0, 0, 0.05);
+                      z-index:1 !important;
+                      font-weight: lighter;
+              }
+          
+              .nav-menu.active {
+                  left: 0;
+              }
+      
+              .nav-item {
+                  margin: 2.5rem 0;
+                  margin-left:40vw;
+                  font-size: 0.50rem;
+                  font-weight: lighter !important;
+              }
+          
+              .hamburger {
+                  display: block;
+                  cursor: pointer;
+              }
+      .bar{
+          background-color: #868686a8;
+      }
+              .hamburger.active .bar:nth-child(2) {
+                  opacity: 0;
+              }
+          
+              .hamburger.active .bar:nth-child(1) {
+                  transform: translateY(8px) rotate(45deg);
+              }
+          
+              .hamburger.active .bar:nth-child(3) {
+                  transform: translateY(-8px) rotate(-45deg);
+              }
+      
+      #nav-logo-desktop{
+          display:none;
+      }
+              #alchBrand{
+                  margin-top: -59% !important;
+                  margin-left:-9% !important;
+                  width:10% !important;
+                  height:10% !important;
+                 }
+      
+                 #bodycontact{
+                  margin-left:26vw;
+                 }
+      
+              #homeLink{
+                  position: absolute;
+                  margin-top:-12vh;
+                  margin-left:-48vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+              #aboutLink{
+                  position: absolute;
+                  margin-top:-17vh;
+                  margin-left:-45vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+           #missionLink{
+                  position: absolute;
+                  margin-top:-21vh;
+                  margin-left:-45vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+            
+      
+              #bookLink{
+                  margin-top:-26vh;
+                  margin-left:-48vw !important;
+                  font-size:.70rem;
+                   padding:2% 10% 2% 10%;
+                   border-style: groove;
+                   border-color: #918f8f;
+                   background-color:#fff;
+                   border-radius: 25px ;
+                   border-width:1px;
+                    font-family: 'Pinyon Script', cursive;
+                    color:#3d3d3d !important;
+                   
+                  }
+           
+                 
+      
+              #contactLink{
+                 display:none;
+      
+              }
+      
+              span{
+                  color:#475569;
+              }
+      
+          #alchDesignLogo{
+              margin-top:-12vh !important;
+          }
+      
+      .nav-logo-mobile{
+          height: 50vh !important;
+      }
+      
+      #mainNav{
+          display:none;
+      }
+      
+      
+      
+      .logo{
+          display:none;
+          position: absolute;
+          margin-top:6vh;
+          margin-left:10vw;
+          color:rgba(94, 103, 111, 0.808);
+      
+      }
+                                                                                  
+       h1{
+          position: absolute;
+        margin-top:-34vh;
+        margin-left:10vw;
+        font-size:0.90rem;
+          z-index:1;
+          color:#777777;
+          font-weight:lighter;
+          width:90vw;
+          animation: fadeInAnimation ease 5s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          opacity: 0;
+          transition: opacity 5s;
+          z-index:-1;
+        
+         }
+      
+         @keyframes fadeInAnimation {
+          0% {
+              opacity: 0;
+          }
+          100% {
+              opacity: 1;
+          }
+      }
+      
+        #headerText1{
+          position:absolute;
+         margin-top:-150vh;
+          margin-left:6vw;
+          width:99vw;
+          color:white;
+          font-size:0.70rem;
+          
+        }
+      
+         #headerText2{
+          
+          position:absolute;
+          margin-top:-21vh;
+           margin-left:2vw;
+           width:100vw;
+            text-align: left;
+            font-size:0.56rem;
+            color:#3d3d3d;
+           font-weight:lighter;
+           z-index:1;
+           
+          }
+           
+          
+        
+        
+        .mobileHeaderUnderlay{
+         
+          height:100vh;
+       
+          z-index:-1;
+        }
+      
+        .underlay{
+          height:5vh;
+          width:70vw;
+         
+        }
+      
+        #underlay1{
+          position:absolute;
+          margin-top:15vh;
+             height:30vh;
+        }
+      
+         #underlay2{
+          display:none;
+          position: absolute;
+          margin-top:23vh;
+          height:10vh;
+          width:100vw;
+          background-color:gray;
+      
+         }
+         
+      #dskTopSlider{
+          display:none;
+      }
+      
+        
+      
+        img{height:10vh;
+            width:50vw;
+           }
+      
+           #fadeImgOne{
+              display:none;}
+           
+      
+           #mobileFadeImgOne{
+      
+              width:30vw;
+              height:60vh;
+           }
+           
+           #sectionTwo{
+            position: absolute;
+          margin-top:9vh;
+          font-family: "Cormorant Garamond", serif;
+       font-weight: 300;
+        }
+          #sectionThree{
+            margin-top:18vh;
+           
+          }
+      
+        /* Slideshow container */
+      .slideshow-container {
+          position: absolute;
+          margin-top:-33vh;
+        margin-left:9vw;
+        height:30vh;
+        max-width: 100vw;
+        
+        }
+      
+      #slideOne{
+        height:100vh !important;
+      }
+      
+      #slideTwo{
+         height:100vh;
+       }
+      
+      
+      
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        margin-top:-110vh !important;
+      
+        width: auto;
+       
+        padding: 6px;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color:pink;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        margin-top:-40vh;
+        margin-left:88vw;
+         background-color:#585c5c;
+        border-radius: 3px 0 0 3px;
+      }
+      
+        .prev{ 
+          margin-top:-40vh;
+          margin-left:0vw;
+          background-color:#585c5c;
+        }
+      
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        display:none;
+        margin-top:-30vh;
+      margin-left:63vw;
+        width:30vw;
+        font-size:14px;
+        
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      
+      .dot {
+          display:none;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin-top:130vh !important;
+        margin-left:-30vw;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      
+        #stage {
+          margin: 1em auto;
+          width: 382px;
+          height: 292px;
+        }
+      
+      .fadeImg{
+        margin-top:-70vh;
+       margin-left:12vw;
+        height:20vh;
+        width:100vw;
+      }
+      
+        #stage a {
+          position: absolute;
+        }
+        #stage a img {
+          padding: 10px;
+          border: 1px solid #ccc;
+          background: #fff;
+        }
+      
+        #stage a:nth-of-type(1) {
+          animation-name: fader;
+          animation-delay: 4s;
+          animation-duration: 1s;
+          z-index: 20;
+        }
+        #stage a:nth-of-type(2) {
+          z-index: 10;
+        }
+        #stage a:nth-of-type(n+3) {
+          display: none;
+        }
+      
+        @keyframes fader {
+          from { opacity: 1.0; }
+          to   { opacity: 0.0; }
+        }
+      
+        .offerHeader{
+          font-size:1.2rem;
+          margin-left:6vw;
+          color:rgb(82, 82, 82);
+          padding:10%;
+      
+        }
+      
+        .offerText{
+          margin-left:2vw;
+            width:99vw;
+            text-align: left;
+            font-size:0.56rem;
+            z-index:1;
+           
+            font-weight:lighter;
+            width:100vw;
+            padding:10%;
+           
+        }
+        
+      
+      
+        .projectTitle{
+          display:none;
+        margin-top:10vh;
+        margin-left:70vw;
+        font-size:2.5rem;
+        font-weight:lighter;
+        color:gray;
+        
+      }
+      
+        .price{
+          display:none;
+          margin-top:4vh;
+          margin-left:75vw;
+          font-size:2.5rem;
+         
+        }
+      footer{
+          height:400px;
+        margin-top:600px;
+        background-color:rgb(43, 56, 58);
+      
+      }
+}
+
+@media screen and (min-width:105px) and (max-width:123px) {
+
+    body{
+        font-family: "Cormorant Garamond", serif;
+      font-weight: 300;
+       }
+
+        
+       #lgMobileContainer{
+        display:none;
+       }
+       
+      
+        .container {
+          position: absolute;
+          margin-top:-0.50vh;
+          width: 100%;
+          height: 40vh;
+          position: relative;
+          display: grid;
+          place-items: center;
+          isolation: isolate;
+          overflow: hidden;
+        }
+        
+        
+        .blob {
+          position: absolute;
+          margin-top:-35vh;
+          opacity: 0.5;
+          width: 400px;
+          aspect-ratio: 1/1;
+          animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+            alternate forwards;
+          filter: blur(40px);
+          z-index: -1;
+          background: linear-gradient(
+            47deg,
+            rgb(20, 17, 18) 21%,
+            rgb(203, 226, 227) 67%,
+            rgb(71, 68, 74) 81%
+          );
+        
+          /*  Optional  */
+          /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+            inset 100px 100px 17px 0px #66319f; */
+        }
+        
+        @keyframes animate {
+          0% {
+            translate: 40% -25%;
+            border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+          }
+          50% {
+            translate: 0% 13%;
+            border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+            rotate: 41deg;
+            scale: 1.15;
+          }
+          100% {
+            translate: -45% 39%;
+            border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+            rotate: -60deg;
+            scale: 1.05;
+          }
+        }
+        
+        
+      #dskTopHeader{
+          display:none;
+      }
+      
+      #mobileNavLinks{
+          display:none;
+         }
+      
+         nav{
+          height:1vh;
+          background-color: rgba(233, 233, 233, 0.534);
+         
+      }
+
+      .logoImg{
+        position: absolute;
+        margin-top:-20vh;
+        margin-left:-48vw;
+        height:13vh;
+        width:100vw;
+        opacity: 0.5;
+      }
+      
+      #dskTopLogo{
+          display:none;
+      }
+      #mobileLogo{ 
+          display:none;
+          position: absolute;
+            margin-top:6vh;
+            margin-left:8vw;
+            font-family: "Kalnia", serif;
+            color:rgb(126, 126, 127);
+            font-size:0.80rem;
+      }
+      .navbar{
+          background-color: #ffffff5e;
+      }
+      
+      
+              .nav-menu {
+                  position: fixed;
+                  left: -100%;
+                  top: 2rem;
+                  flex-direction: column;
+                  background-color: #fff !important;
+                  height:16vh !important;
+                  width: 100%;
+                  border-radius: 10px;
+                  text-align: center;
+                  transition: 0.3s;
+                  box-shadow:
+                      0 10px 27px rgba(0, 0, 0, 0.05);
+                      z-index:1 !important;
+                      font-weight: lighter;
+              }
+          
+              .nav-menu.active {
+                  left: 0;
+              }
+      
+              .nav-item {
+                  margin: 2.5rem 0;
+                  margin-left:40vw;
+                  font-size: 0.50rem;
+                  font-weight: lighter !important;
+              }
+          
+              .hamburger {
+                  display: block;
+                  cursor: pointer;
+              }
+      .bar{
+          background-color: #868686a8;
+      }
+              .hamburger.active .bar:nth-child(2) {
+                  opacity: 0;
+              }
+          
+              .hamburger.active .bar:nth-child(1) {
+                  transform: translateY(8px) rotate(45deg);
+              }
+          
+              .hamburger.active .bar:nth-child(3) {
+                  transform: translateY(-8px) rotate(-45deg);
+              }
+      
+      #nav-logo-desktop{
+          display:none;
+      }
+              #alchBrand{
+                  margin-top: -59% !important;
+                  margin-left:-9% !important;
+                  width:10% !important;
+                  height:10% !important;
+                 }
+      
+                 #bodycontact{
+                  margin-left:26vw;
+                 }
+      
+              #homeLink{
+                  position: absolute;
+                  margin-top:-12vh;
+                  margin-left:-48vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+              #aboutLink{
+                  position: absolute;
+                  margin-top:-17vh;
+                  margin-left:-45vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+           #missionLink{
+                  position: absolute;
+                  margin-top:-21vh;
+                  margin-left:-45vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+            
+      
+              #bookLink{
+                  margin-top:-26vh;
+                  margin-left:-48vw !important;
+                  font-size:.70rem;
+                   padding:2% 10% 2% 10%;
+                   border-style: groove;
+                   border-color: #918f8f;
+                   background-color:#fff;
+                   border-radius: 25px ;
+                   border-width:1px;
+                    font-family: 'Pinyon Script', cursive;
+                    color:#3d3d3d !important;
+                   
+                  }
+           
+                 
+      
+              #contactLink{
+                 display:none;
+      
+              }
+      
+              span{
+                  color:#475569;
+              }
+      
+          #alchDesignLogo{
+              margin-top:-12vh !important;
+          }
+      
+      .nav-logo-mobile{
+          height: 50vh !important;
+      }
+      
+      #mainNav{
+          display:none;
+      }
+      
+      
+      
+      .logo{
+          display:none;
+          position: absolute;
+          margin-top:6vh;
+          margin-left:10vw;
+          color:rgba(94, 103, 111, 0.808);
+      
+      }
+                                                                                  
+       h1{
+          position: absolute;
+        margin-top:-30vh;
+        margin-left:12vw;
+        font-size:0.90rem;
+          z-index:1;
+          color:#777777;
+          font-weight:lighter;
+          width:90vw;
+          animation: fadeInAnimation ease 5s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          opacity: 0;
+          transition: opacity 5s;
+          z-index:-1;
+        
+         }
+      
+         @keyframes fadeInAnimation {
+          0% {
+              opacity: 0;
+          }
+          100% {
+              opacity: 1;
+          }
+      }
+      
+        #headerText1{
+          position:absolute;
+         margin-top:-150vh;
+          margin-left:6vw;
+          width:99vw;
+          color:white;
+          font-size:0.70rem;
+          
+        }
+      
+         #headerText2{
+          
+          position:absolute;
+          margin-top:-10vh;
+           margin-left:7vw;
+           width:90vw;
+            text-align: left;
+            font-size:0.63rem;
+            color:#3d3d3d;
+           font-weight:lighter;
+           z-index:1;
+           
+          }
+           
+          
+        
+        
+        .mobileHeaderUnderlay{
+         
+          height:100vh;
+       
+          z-index:-1;
+        }
+      
+        .underlay{
+          height:5vh;
+          width:70vw;
+         
+        }
+      
+        #underlay1{
+          position:absolute;
+          margin-top:15vh;
+             height:30vh;
+        }
+      
+         #underlay2{
+          display:none;
+          position: absolute;
+          margin-top:23vh;
+          height:10vh;
+          width:100vw;
+          background-color:gray;
+      
+         }
+         
+      #dskTopSlider{
+          display:none;
+      }
+      
+        
+      
+        img{height:10vh;
+            width:50vw;
+           }
+      
+           #fadeImgOne{
+              display:none;}
+           
+      
+           #mobileFadeImgOne{
+      
+              width:30vw;
+              height:60vh;
+           }
+           #sectionTwo{
+            position: absolute;
+          margin-top:-1vh;
+          font-family: "Cormorant Garamond", serif;
+       font-weight: 300;
+        }
+          #sectionThree{
+            margin-top:3vh;
+           
+          }
+      
+        /* Slideshow container */
+      .slideshow-container {
+          position: absolute;
+          margin-top:-30vh;
+        margin-left:13vw;
+        height:30vh;
+        max-width: 100vw;
+        
+        }
+      
+      #slideOne{
+        height:100vh !important;
+      }
+      
+      #slideTwo{
+         height:100vh;
+       }
+      
+      
+      
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        margin-top:-30vh !important;
+      
+        width: auto;
+       
+        padding: 6px;
+        color: rgb(139, 139, 139);
+        font-weight: bold;
+        font-size: 9px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        margin-top:-40vh;
+        margin-left:70vw;
+       
+        border-radius: 3px 0 0 3px;
+      }
+      
+        .prev{ 
+          margin-top:-40vh;
+          margin-left:-16vw;
+         
+        }
+      
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        display:none;
+        margin-top:-30vh;
+      margin-left:63vw;
+        width:30vw;
+        font-size:14px;
+        
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      
+      .dot {
+          display:none;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin-top:130vh !important;
+        margin-left:-30vw;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      
+        #stage {
+          margin: 1em auto;
+          width: 382px;
+          height: 292px;
+        }
+      
+      .fadeImg{
+        margin-top:-70vh;
+       margin-left:7vw;
+        height:20vh;
+        width:100vw;
+      }
+      
+        #stage a {
+          position: absolute;
+        }
+        #stage a img {
+          padding: 10px;
+          border: 1px solid #ccc;
+          background: #fff;
+        }
+      
+        #stage a:nth-of-type(1) {
+          animation-name: fader;
+          animation-delay: 4s;
+          animation-duration: 1s;
+          z-index: 20;
+        }
+        #stage a:nth-of-type(2) {
+          z-index: 10;
+        }
+        #stage a:nth-of-type(n+3) {
+          display: none;
+        }
+      
+        @keyframes fader {
+          from { opacity: 1.0; }
+          to   { opacity: 0.0; }
+        }
+      
+        .offerHeader{
+          font-size:1.2rem;
+          margin-left:6vw;
+          color:rgb(82, 82, 82);
+          padding:10%;
+      
+        }
+      
+        .offerText{
+          margin-left:-2vw;
+            width:95vw;
+            text-align: left;
+            font-size:0.56rem;
+            z-index:1;
+           
+            font-weight:lighter;
+            width:100vw;
+            padding:10%;
+           
+        }
+        
+      
+      
+        .projectTitle{
+          display:none;
+        margin-top:10vh;
+        margin-left:70vw;
+        font-size:2.5rem;
+        font-weight:lighter;
+        color:gray;
+        
+      }
+      
+        .price{
+          display:none;
+          margin-top:4vh;
+          margin-left:75vw;
+          font-size:2.5rem;
+         
+        }
+      footer{
+          height:400px;
+        margin-top:600px;
+        background-color:rgb(43, 56, 58);
+      
+      }
+}
+
+
+
+
+
+
+@media screen and (min-width:126px) and (max-width:150px){
+    body{
+        font-family: "Cormorant Garamond", serif;
+      font-weight: 300;
+    
+       }
+
+        
+       #lgMobileContainer{
+        display:none;
+       }
+      
+        .container {
+          position: absolute;
+          margin-top:0vh;
+          width: 100%;
+          height: 26vh;
+          position: relative;
+          display: grid;
+          place-items: center;
+          isolation: isolate;
+          overflow: hidden;
+        }
+        
+        
+        .blob {
+          position: absolute;
+          margin-top:-35vh;
+          opacity: 0.5;
+          width: 400px;
+          aspect-ratio: 1/1;
+          animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+            alternate forwards;
+          filter: blur(40px);
+          z-index: -1;
+          background: linear-gradient(
+            47deg,
+            rgb(20, 17, 18) 21%,
+            rgb(203, 226, 227) 67%,
+            rgb(71, 68, 74) 81%
+          );
+        
+          /*  Optional  */
+          /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+            inset 100px 100px 17px 0px #66319f; */
+        }
+        
+        @keyframes animate {
+          0% {
+            translate: 40% -25%;
+            border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+          }
+          50% {
+            translate: 0% 13%;
+            border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+            rotate: 41deg;
+            scale: 1.15;
+          }
+          100% {
+            translate: -45% 39%;
+            border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+            rotate: -60deg;
+            scale: 1.05;
+          }
+        }
+       
+        .logoImg{
+            position: absolute;
+            margin-top:-12vh;
+            margin-left:-45vw;
+            height:13vh;
+            width:90vw;
+        }
+        
+      #dskTopHeader{
+          display:none;
+      }
+      
+      #mobileNavLinks{
+          display:none;
+         }
+      
+         nav{
+          height:1vh;
+          background-color: rgba(233, 233, 233, 0.534);
+         
+      }
+      
+      #dskTopLogo{
+          display:none;
+      }
+      #mobileLogo{ 
+          display:none;
+          position: absolute;
+            margin-top:6vh;
+            margin-left:8vw;
+            font-family: "Kalnia", serif;
+            color:rgb(126, 126, 127);
+            font-size:0.80rem;
+      }
+      .navbar{
+          background-color: #ffffff5e;
+      }
+      
+      
+              .nav-menu {
+                  position: fixed;
+                  left: -100%;
+                  top: 2rem;
+                  flex-direction: column;
+                  background-color: #fff !important;
+                  height:16vh !important;
+                  width: 100%;
+                  border-radius: 10px;
+                  text-align: center;
+                  transition: 0.3s;
+                  box-shadow:
+                      0 10px 27px rgba(0, 0, 0, 0.05);
+                      z-index:1 !important;
+                      font-weight: lighter;
+              }
+          
+              .nav-menu.active {
+                  left: 0;
+              }
+      
+              .nav-item {
+                  margin: 2.5rem 0;
+                  margin-left:40vw;
+                  font-size: 0.50rem;
+                  font-weight: lighter !important;
+              }
+          
+              .hamburger {
+                  display: block;
+                  cursor: pointer;
+              }
+      .bar{
+          background-color: #868686a8;
+      }
+              .hamburger.active .bar:nth-child(2) {
+                  opacity: 0;
+              }
+          
+              .hamburger.active .bar:nth-child(1) {
+                  transform: translateY(8px) rotate(45deg);
+              }
+          
+              .hamburger.active .bar:nth-child(3) {
+                  transform: translateY(-8px) rotate(-45deg);
+              }
+      
+      #nav-logo-desktop{
+          display:none;
+      }
+              #alchBrand{
+                  margin-top: -59% !important;
+                  margin-left:-9% !important;
+                  width:10% !important;
+                  height:10% !important;
+                 }
+      
+                 #bodycontact{
+                  margin-left:26vw;
+                 }
+      
+              #homeLink{
+                  position: absolute;
+                  margin-top:-12vh;
+                  margin-left:-48vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+              #aboutLink{
+                  position: absolute;
+                  margin-top:-17vh;
+                  margin-left:-45vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+           #missionLink{
+                  position: absolute;
+                  margin-top:-21vh;
+                  margin-left:-45vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+            
+      
+              #bookLink{
+                  margin-top:-26vh;
+                  margin-left:-48vw !important;
+                  font-size:.70rem;
+                   padding:2% 10% 2% 10%;
+                   border-style: groove;
+                   border-color: #918f8f;
+                   background-color:#fff;
+                   border-radius: 25px ;
+                   border-width:1px;
+                    font-family: 'Pinyon Script', cursive;
+                    color:#3d3d3d !important;
+                   
+                  }
+           
+                 
+      
+              #contactLink{
+                 display:none;
+      
+              }
+      
+              span{
+                  color:#475569;
+              }
+      
+          #alchDesignLogo{
+              margin-top:-12vh !important;
+          }
+      
+      .nav-logo-mobile{
+          height: 50vh !important;
+      }
+      
+      #mainNav{
+          display:none;
+      }
+      
+      
+      
+      .logo{
+          display:none;
+          position: absolute;
+          margin-top:6vh;
+          margin-left:10vw;
+          color:rgba(94, 103, 111, 0.808);
+      
+      }
+                                                                                  
+       h1{
+          position: absolute;
+        margin-top:-54vh;
+        margin-left:10vw;
+        font-size:2rem;
+          z-index:1;
+          color:#777777;
+          font-weight:lighter;
+          width:90vw;
+          animation: fadeInAnimation ease 5s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          opacity: 0;
+          transition: opacity 5s;
+          z-index:-1;
+        
+         }
+      
+         @keyframes fadeInAnimation {
+          0% {
+              opacity: 0;
+          }
+          100% {
+              opacity: 1;
+          }
+      }
+      
+        #headerText1{
+          position:absolute;
+         margin-top:-150vh;
+          margin-left:6vw;
+          width:99vw;
+          color:white;
+          font-size:0.70rem;
+          
+        }
+      
+         #headerText2{
+          
+          position:absolute;
+          margin-top:-11vh;
+           margin-left:1.3vw;
+           width:100vw;
+            text-align: left;
+            font-size:0.80rem;
+            color:#3d3d3d;
+           font-weight:lighter;
+           z-index:1;
+           
+          }
+           
+          
+        
+        
+        .mobileHeaderUnderlay{
+         
+          height:100vh;
+       
+          z-index:-1;
+        }
+      
+        .underlay{
+          height:5vh;
+          width:70vw;
+         
+        }
+      
+        #underlay1{
+          position:absolute;
+          margin-top:15vh;
+             height:30vh;
+        }
+      
+         #underlay2{
+          display:none;
+          position: absolute;
+          margin-top:23vh;
+          height:10vh;
+          width:100vw;
+          background-color:gray;
+      
+         }
+         
+      #dskTopSlider{
+          display:none;
+      }
+      
+        
+      
+        img{height:10vh;
+            width:50vw;
+           }
+      
+           #fadeImgOne{
+              display:none;}
+           
+      
+           #mobileFadeImgOne{
+      
+              width:30vw;
+              height:60vh;
+           }
+           
+      #sectionTwo{
+          
+        margin-top:20vh;
+      }
+        #sectionThree{
+          margin-top:-37vh;
+         
+        }
+      
+        /* Slideshow container */
+      .slideshow-container {
+          position: absolute;
+          margin-top:-30vh;
+        margin-left:15vw;
+        height:30vh;
+        max-width: 100vw;
+        
+        }
+      
+      #slideOne{
+        height:100vh !important;
+      }
+      
+      #slideTwo{
+         height:100vh;
+       }
+      
+      
+      
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        margin-top:-32vh !important;
+      
+        width: auto;
+       
+        padding: 6px;
+        color: rgb(113, 113, 113);
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        margin-top:-40vh;
+        margin-left:70vw;
+        
+        border-radius: 3px 0 0 3px;
+      }
+      
+        .prev{ 
+          margin-top:-40vh;
+          margin-left:-14vw;
+          
+        }
+      
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        display:none;
+        margin-top:-30vh;
+      margin-left:63vw;
+        width:30vw;
+        font-size:14px;
+        
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      
+      .dot {
+          display:none;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin-top:130vh !important;
+        margin-left:-30vw;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      
+        #stage {
+          margin: 1em auto;
+          width: 382px;
+          height: 292px;
+        }
+      
+      .fadeImg{
+        margin-top:-10vh;
+       margin-left:16vw;
+        height:17vh;
+        width:75vw;
+      }
+      
+        #stage a {
+          position: absolute;
+        }
+        #stage a img {
+          padding: 10px;
+          border: 1px solid #ccc;
+          background: #fff;
+        }
+      
+        #stage a:nth-of-type(1) {
+          animation-name: fader;
+          animation-delay: 4s;
+          animation-duration: 1s;
+          z-index: 20;
+        }
+        #stage a:nth-of-type(2) {
+          z-index: 10;
+        }
+        #stage a:nth-of-type(n+3) {
+          display: none;
+        }
+      
+        @keyframes fader {
+          from { opacity: 1.0; }
+          to   { opacity: 0.0; }
+        }
+      
+        .offerHeader{
+          font-size:1.2rem;
+          margin-left:6vw;
+          color:rgb(82, 82, 82);
+          padding:10%;
+      
+        }
+      
+        .offerText{
+          margin-left:-4vw;
+            width:90vw;
+            text-align: left;
+            font-size:0.50rem;
+            z-index:1;
+           
+            font-weight:lighter;
+            width:100vw;
+            padding:10%;
+           
+        }
+        
+      
+      
+        .projectTitle{
+          display:none;
+        margin-top:10vh;
+        margin-left:70vw;
+        font-size:2.5rem;
+        font-weight:lighter;
+        color:gray;
+        
+      }
+      
+        .price{
+          display:none;
+          margin-top:4vh;
+          margin-left:75vw;
+          font-size:2.5rem;
+         
+        }
+      footer{
+          height:400px;
+        margin-top:600px;
+        background-color:rgb(43, 56, 58);
+      
+      }
+}
+
+
+@media screen and (min-width:151px) and (max-width:200px){
+   
+    body{
+      
+            font-family: "Cormorant Garamond", serif;
+          font-weight: 300;
+           }
+
+            
+       #lgMobileContainer{
+        display:none;
+       }
+      
+    .container {
+      position: absolute;
+      margin-top:2vh;
+      width: 100%;
+      height: 26vh;
+      position: relative;
+      display: grid;
+      place-items: center;
+      isolation: isolate;
+      overflow: hidden;
+    }
+    
+    
+    .blob {
+      position: absolute;
+      margin-top:-35vh;
+      opacity: 0.5;
+      width: 400px;
+      aspect-ratio: 1/1;
+      animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+        alternate forwards;
+      filter: blur(40px);
+      z-index: -1;
+      background: linear-gradient(
+        47deg,
+        rgb(20, 17, 18) 21%,
+        rgb(203, 226, 227) 67%,
+        rgb(71, 68, 74) 81%
+      );
+    
+      /*  Optional  */
+      /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+        inset 100px 100px 17px 0px #66319f; */
+    }
+    
+    @keyframes animate {
+      0% {
+        translate: 40% -25%;
+        border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+      }
+      50% {
+        translate: 0% 13%;
+        border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+        rotate: 41deg;
+        scale: 1.15;
+      }
+      100% {
+        translate: -45% 39%;
+        border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+        rotate: -60deg;
+        scale: 1.05;
+      }
+    }
+   
+    .logoImg{
+        position: absolute;
+        margin-top:-13vh;
+        margin-left:-45vw;
+        height:15vh;
+        width:90vw;
+    }
+    
+  #dskTopHeader{
+      display:none;
+  }
+  
+  #mobileNavLinks{
+      display:none;
+     }
+  
+     nav{
+      height:1vh;
+      background-color: rgba(233, 233, 233, 0.534);
+     
+  }
+  
+  #dskTopLogo{
+      display:none;
+  }
+  #mobileLogo{ 
+      display:none;
+      position: absolute;
+        margin-top:6vh;
+        margin-left:8vw;
+        font-family: "Kalnia", serif;
+        color:rgb(126, 126, 127);
+        font-size:0.80rem;
+  }
+  .navbar{
+      background-color: #ffffff5e;
+  }
+  
+  
+          .nav-menu {
+              position: fixed;
+              left: -100%;
+              top: 2rem;
+              flex-direction: column;
+              background-color: #fff !important;
+              height:16vh !important;
+              width: 100%;
+              border-radius: 10px;
+              text-align: center;
+              transition: 0.3s;
+              box-shadow:
+                  0 10px 27px rgba(0, 0, 0, 0.05);
+                  z-index:1 !important;
+                  font-weight: lighter;
+          }
+      
+          .nav-menu.active {
+              left: 0;
+          }
+  
+          .nav-item {
+              margin: 2.5rem 0;
+              margin-left:40vw;
+              font-size: 0.50rem;
+              font-weight: lighter !important;
+          }
+      
+          .hamburger {
+              display: block;
+              cursor: pointer;
+          }
+  .bar{
+      background-color: #868686a8;
+  }
+          .hamburger.active .bar:nth-child(2) {
+              opacity: 0;
+          }
+      
+          .hamburger.active .bar:nth-child(1) {
+              transform: translateY(8px) rotate(45deg);
+          }
+      
+          .hamburger.active .bar:nth-child(3) {
+              transform: translateY(-8px) rotate(-45deg);
+          }
+  
+  #nav-logo-desktop{
+      display:none;
+  }
+          #alchBrand{
+              margin-top: -59% !important;
+              margin-left:-9% !important;
+              width:10% !important;
+              height:10% !important;
+             }
+  
+             #bodycontact{
+              margin-left:26vw;
+             }
+  
+          #homeLink{
+              position: absolute;
+              margin-top:-12vh;
+              margin-left:-48vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+          #aboutLink{
+              position: absolute;
+              margin-top:-17vh;
+              margin-left:-45vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+       #missionLink{
+              position: absolute;
+              margin-top:-21vh;
+              margin-left:-45vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+        
+  
+          #bookLink{
+              margin-top:-26vh;
+              margin-left:-48vw !important;
+              font-size:.70rem;
+               padding:2% 10% 2% 10%;
+               border-style: groove;
+               border-color: #918f8f;
+               background-color:#fff;
+               border-radius: 25px ;
+               border-width:1px;
+                font-family: 'Pinyon Script', cursive;
+                color:#3d3d3d !important;
+               
+              }
+       
+             
+  
+          #contactLink{
+             display:none;
+  
+          }
+  
+          span{
+              color:#475569;
+          }
+  
+      #alchDesignLogo{
+          margin-top:-12vh !important;
+      }
+  
+  .nav-logo-mobile{
+      height: 50vh !important;
+  }
+  
+  #mainNav{
+      display:none;
+  }
+  
+  
+  
+  .logo{
+      display:none;
+      position: absolute;
+      margin-top:6vh;
+      margin-left:10vw;
+      color:rgba(94, 103, 111, 0.808);
+  
+  }
+                                                                              
+   h1{
+      position: absolute;
+    margin-top:-54vh;
+    margin-left:10vw;
+    font-size:2rem;
+      z-index:1;
+      color:#777777;
+      font-weight:lighter;
+      width:90vw;
+      animation: fadeInAnimation ease 5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      transition: opacity 5s;
+      z-index:-1;
+    
+     }
+  
+     @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  
+    #headerText1{
+      position:absolute;
+     margin-top:-150vh;
+      margin-left:6vw;
+      width:99vw;
+      color:white;
+      font-size:0.70rem;
+      
+    }
+  
+     #headerText2{
+      
+      position:absolute;
+      margin-top:-10vh;
+       margin-left:2vw;
+       width:100vw;
+        text-align: left;
+        font-size:0.80rem;
+        color:#3d3d3d;
+       font-weight:lighter;
+       z-index:1;
+       
+      }
+       
+      
+    
+    
+    .mobileHeaderUnderlay{
+     
+      height:100vh;
+   
+      z-index:-1;
+    }
+  
+    .underlay{
+      height:5vh;
+      width:70vw;
+     
+    }
+  
+    #underlay1{
+      position:absolute;
+      margin-top:15vh;
+         height:30vh;
+    }
+  
+     #underlay2{
+      display:none;
+      position: absolute;
+      margin-top:23vh;
+      height:10vh;
+      width:100vw;
+      background-color:gray;
+  
+     }
+     
+  #dskTopSlider{
+      display:none;
+  }
+  
+    
+  
+    img{height:20vh;
+        width:50vw;
+       }
+  
+       #fadeImgOne{
+          display:none;}
+       
+  
+       #mobileFadeImgOne{
+  
+          width:30vw;
+          height:60vh;
+       }
+       
+       #sectionTwo{
+        position: absolute;
+      margin-top:25vh;
+      font-family: "Cormorant Garamond", serif;
+   font-weight: 300;
+    }
+      #sectionThree{
+        margin-top:18vh;
+       
+      }
+  
+    /* Slideshow container */
+  .slideshow-container {
+      position: absolute;
+      margin-top:-20vh;
+    margin-left:13vw;
+    height:30vh;
+    max-width: 100vw;
+    
+    }
+  
+  #slideOne{
+    height:100vh !important;
+  }
+  
+  #slideTwo{
+     height:100vh;
+   }
+  
+  
+  
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    margin-top:-105vh !important;
+  
+    width: auto;
+   
+    padding: 6px;
+    color: white;
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+    background-color:pink;
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    margin-top:-40vh;
+    margin-left:88vw;
+     background-color:#585c5c;
+    border-radius: 3px 0 0 3px;
+  }
+  
+    .prev{ 
+      margin-top:-40vh;
+      margin-left:0vw;
+      background-color:#585c5c;
+    }
+  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    display:none;
+    margin-top:-30vh;
+  margin-left:63vw;
+    width:30vw;
+    font-size:14px;
+    
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  
+  .dot {
+      display:none;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-top:130vh !important;
+    margin-left:-30vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+    #stage {
+      margin: 1em auto;
+      width: 382px;
+      height: 292px;
+    }
+  
+  .fadeImg{
+    margin-top:-10vh;
+   margin-left:16vw;
+    height:17vh;
+    width:75vw;
+  }
+  
+    #stage a {
+      position: absolute;
+    }
+    #stage a img {
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+  
+    #stage a:nth-of-type(1) {
+      animation-name: fader;
+      animation-delay: 4s;
+      animation-duration: 1s;
+      z-index: 20;
+    }
+    #stage a:nth-of-type(2) {
+      z-index: 10;
+    }
+    #stage a:nth-of-type(n+3) {
+      display: none;
+    }
+  
+    @keyframes fader {
+      from { opacity: 1.0; }
+      to   { opacity: 0.0; }
+    }
+  
+    .offerHeader{
+      font-size:1.2rem;
+      margin-left:6vw;
+      color:rgb(82, 82, 82);
+      padding:10%;
+  
+    }
+  
+    .offerText{
+      margin-left:2vw;
+        width:99vw;
+        text-align: left;
+        font-size:0.56rem;
+        z-index:1;
+       
+        font-weight:lighter;
+        width:100vw;
+        padding:10%;
+       
+    }
+    
+  
+  
+    .projectTitle{
+      display:none;
+    margin-top:10vh;
+    margin-left:70vw;
+    font-size:2.5rem;
+    font-weight:lighter;
+    color:gray;
+    
+  }
+  
+    .price{
+      display:none;
+      margin-top:4vh;
+      margin-left:75vw;
+      font-size:2.5rem;
+     
+    }
+  footer{
+      height:400px;
+    margin-top:600px;
+    background-color:rgb(43, 56, 58);
+  
+  }
+}
+
+
+
+
+@media screen and (min-width:201px) and (max-width:260px){
+    body{
+       
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;}
+
+         
+       #lgMobileContainer{
+        display:none;
+       }
+      
+       
+      
+        .container {
+          position: absolute;
+          margin-top:1vh;
+          width: 100%;
+          height: 80vh;
+          position: relative;
+          display: grid;
+          place-items: center;
+          isolation: isolate;
+          overflow: hidden;
+        }
+        
+        
+        .blob {
+          position: absolute;
+          margin-top:-35vh;
+          opacity: 0.5;
+          width: 400px;
+          aspect-ratio: 1/1;
+          animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+            alternate forwards;
+          filter: blur(40px);
+          z-index: -1;
+          background: linear-gradient(
+            47deg,
+            rgb(20, 17, 18) 21%,
+            rgb(203, 226, 227) 67%,
+            rgb(71, 68, 74) 81%
+          );
+        
+          /*  Optional  */
+          /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+            inset 100px 100px 17px 0px #66319f; */
+        }
+        
+        @keyframes animate {
+          0% {
+            translate: 40% -25%;
+            border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+          }
+          50% {
+            translate: 0% 13%;
+            border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+            rotate: 41deg;
+            scale: 1.15;
+          }
+          100% {
+            translate: -45% 39%;
+            border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+            rotate: -60deg;
+            scale: 1.05;
+          }
+        }
+        
+        
+      #dskTopHeader{
+          display:none;
+      }
+      
+      #mobileNavLinks{
+          display:none;
+         }
+      
+         nav{
+          height:1vh;
+          background-color: rgba(233, 233, 233, 0.534);
+         
+      }
+      
+      #dskTopLogo{
+          display:none;
+      }
+      #mobileLogo{ 
+          display:none;
+          position: absolute;
+            margin-top:6vh;
+            margin-left:8vw;
+            font-family: "Kalnia", serif;
+            color:rgb(126, 126, 127);
+            font-size:0.80rem;
+      }
+      .navbar{
+          background-color: #ffffff5e;
+      }
+      
+      
+              .nav-menu {
+                  position: fixed;
+                  left: -100%;
+                  top: 2rem;
+                  flex-direction: column;
+                  background-color: #fff !important;
+                  height:16vh !important;
+                  width: 100%;
+                  border-radius: 10px;
+                  text-align: center;
+                  transition: 0.3s;
+                  box-shadow:
+                      0 10px 27px rgba(0, 0, 0, 0.05);
+                      z-index:1 !important;
+                      font-weight: lighter;
+              }
+          
+              .nav-menu.active {
+                  left: 0;
+              }
+      
+              .nav-item {
+                  margin: 2.5rem 0;
+                  margin-left:40vw;
+                  font-size: 0.50rem;
+                  font-weight: lighter !important;
+              }
+          
+              .hamburger {
+                  display: block;
+                  cursor: pointer;
+              }
+      .bar{
+          background-color: #868686a8;
+      }
+              .hamburger.active .bar:nth-child(2) {
+                  opacity: 0;
+              }
+          
+              .hamburger.active .bar:nth-child(1) {
+                  transform: translateY(8px) rotate(45deg);
+              }
+          
+              .hamburger.active .bar:nth-child(3) {
+                  transform: translateY(-8px) rotate(-45deg);
+              }
+      
+      #nav-logo-desktop{
+          display:none;
+      }
+              #alchBrand{
+                  margin-top: -59% !important;
+                  margin-left:-9% !important;
+                  width:10% !important;
+                  height:10% !important;
+                 }
+      
+                 #bodycontact{
+                  margin-left:26vw;
+                 }
+      
+              #homeLink{
+                  position: absolute;
+                  margin-top:-12vh;
+                  margin-left:-48vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+              #aboutLink{
+                  position: absolute;
+                  margin-top:-17vh;
+                  margin-left:-45vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+           #missionLink{
+                  position: absolute;
+                  margin-top:-21vh;
+                  margin-left:-45vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+            
+      
+              #bookLink{
+                  margin-top:-26vh;
+                  margin-left:-48vw !important;
+                  font-size:.70rem;
+                   padding:2% 10% 2% 10%;
+                   border-style: groove;
+                   border-color: #918f8f;
+                   background-color:#fff;
+                   border-radius: 25px ;
+                   border-width:1px;
+                    font-family: 'Pinyon Script', cursive;
+                    color:#3d3d3d !important;
+                   
+                  }
+           
+                 
+      
+              #contactLink{
+                 display:none;
+      
+              }
+      
+              span{
+                  color:#475569;
+              }
+      
+          #alchDesignLogo{
+              margin-top:-12vh !important;
+          }
+      
+      .nav-logo-mobile{
+          height: 50vh !important;
+      }
+      
+      #mainNav{
+          display:none;
+      }
+      
+      .logoImg{
+        position: absolute;
+        margin-top:-39vh;
+        margin-left:-45vw;
+        height:15vh;
+        width:90vw;
+      }
+      
+      
+      .logo{
+          display:none;
+          position: absolute;
+          margin-top:6vh;
+          margin-left:10vw;
+          color:rgba(94, 103, 111, 0.808);
+      
+      }
+                                                                                  
+       h1{
+          position: absolute;
+        margin-top:-34vh;
+        margin-left:10vw;
+        font-size:1.5rem;
+          z-index:1;
+          color:#777777;
+          font-weight:lighter;
+          width:90vw;
+          animation: fadeInAnimation ease 5s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          opacity: 0;
+          transition: opacity 5s;
+          z-index:-1;
+        
+         }
+      
+         @keyframes fadeInAnimation {
+          0% {
+              opacity: 0;
+          }
+          100% {
+              opacity: 1;
+          }
+      }
+      
+        #headerText1{
+          position:absolute;
+         margin-top:-150vh;
+          margin-left:6vw;
+          width:99vw;
+          color:white;
+          font-size:0.70rem;
+          
+        }
+      
+         #headerText2{
+          
+          position:absolute;
+          margin-top:-62vh;
+           margin-left:3vw;
+           width:100vw;
+            text-align: left;
+            font-size:0.86rem;
+            color:#3d3d3d;
+           font-weight:lighter;
+           z-index:1;
+           
+          }
+           
+          
+        
+        
+        .mobileHeaderUnderlay{
+         
+          height:100vh;
+       
+          z-index:-1;
+        }
+      
+        .underlay{
+          height:5vh;
+          width:70vw;
+         
+        }
+      
+        #underlay1{
+          position:absolute;
+          margin-top:15vh;
+             height:30vh;
+        }
+      
+         #underlay2{
+          display:none;
+          position: absolute;
+          margin-top:23vh;
+          height:10vh;
+          width:100vw;
+          background-color:gray;
+      
+         }
+         
+      #dskTopSlider{
+          display:none;
+      }
+      
+        
+      
+        img{height:15vh;
+            width:50vw;
+           }
+      
+           #fadeImgOne{
+              display:none;}
+           
+      
+           #mobileFadeImgOne{
+      
+              width:30vw;
+              height:60vh;
+           }
+           
+           #sectionTwo{
+            position: absolute;
+          margin-top:-26vh;
+          font-family: "Cormorant Garamond", serif;
+       font-weight: 300;
+        }
+          #sectionThree{
+            margin-top:-24vh;
+           
+          }
+      
+        /* Slideshow container */
+      .slideshow-container {
+          position: absolute;
+          margin-top:-30vh;
+        margin-left:21vw;
+        height:30vh;
+        max-width: 100vw;
+        
+        }
+      
+      #slideOne{
+        height:100vh !important;
+      }
+      
+      #slideTwo{
+         height:100vh;
+       }
+      
+      
+      
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        margin-top:-27vh !important;
+      
+        width: auto;
+       
+        padding: 6px;
+        color: rgb(93, 93, 93);
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+       
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        margin-top:-40vh;
+        margin-left:70vw;
+       
+        border-radius: 3px 0 0 3px;
+      }
+      
+        .prev{ 
+          margin-top:-40vh;
+          margin-left:-22vw;
+         
+        }
+      
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        display:none;
+        margin-top:-30vh;
+      margin-left:63vw;
+        width:30vw;
+        font-size:14px;
+        
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      
+      .dot {
+          display:none;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin-top:130vh !important;
+        margin-left:-30vw;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      
+        #stage {
+          margin: 1em auto;
+          width: 382px;
+          height: 292px;
+        }
+      
+      .fadeImg{
+        margin-top:-83vh;
+       margin-left:14vw;
+        height:26vh;
+        width:70vw;
+      }
+      
+        #stage a {
+          position: absolute;
+        }
+        #stage a img {
+          padding: 10px;
+          border: 1px solid #ccc;
+          background: #fff;
+        }
+      
+        #stage a:nth-of-type(1) {
+          animation-name: fader;
+          animation-delay: 4s;
+          animation-duration: 1s;
+          z-index: 20;
+        }
+        #stage a:nth-of-type(2) {
+          z-index: 10;
+        }
+        #stage a:nth-of-type(n+3) {
+          display: none;
+        }
+      
+        @keyframes fader {
+          from { opacity: 1.0; }
+          to   { opacity: 0.0; }
+        }
+      
+        .offerHeader{
+          font-size:1.2rem;
+          margin-left:23vw;
+          color:rgb(82, 82, 82);
+          padding:10%;
+      
+        }
+      
+        .offerText{
+            margin-top:-3vh;
+          margin-left:-8vw;
+            width:99vw;
+            text-align: left;
+            font-size:0.56rem;
+            z-index:1;
+           
+            font-weight:lighter;
+            width:100vw;
+            padding:10%;
+           
+        }
+        
+      
+      
+        .projectTitle{
+          display:none;
+        margin-top:10vh;
+        margin-left:76vw;
+        font-size:2.5rem;
+        font-weight:lighter;
+        color:gray;
+        
+      }
+      
+        .price{
+          display:none;
+          margin-top:4vh;
+          margin-left:75vw;
+          font-size:2.5rem;
+         
+        }
+      footer{
+          height:400px;
+        margin-top:600px;
+        background-color:rgb(43, 56, 58);
+      
+      }
+
+
+}
+
+
+@media screen and (min-width:261px) and (max-width:300px){
+  body{
+       
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;}
+
+     
+   #lgMobileContainer{
+    display:none;
+   }
+  
+   
+  
+    .container {
+      position: absolute;
+      margin-top:1vh;
+      width: 100%;
+      height: 80vh;
+      position: relative;
+      display: grid;
+      place-items: center;
+      isolation: isolate;
+      overflow: hidden;
+    }
+    
+    
+    .blob {
+      position: absolute;
+      margin-top:-35vh;
+      opacity: 0.5;
+      width: 400px;
+      aspect-ratio: 1/1;
+      animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+        alternate forwards;
+      filter: blur(40px);
+      z-index: -1;
+      background: linear-gradient(
+        47deg,
+        rgb(20, 17, 18) 21%,
+        rgb(203, 226, 227) 67%,
+        rgb(71, 68, 74) 81%
+      );
+    
+      /*  Optional  */
+      /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+        inset 100px 100px 17px 0px #66319f; */
+    }
+    
+    @keyframes animate {
+      0% {
+        translate: 40% -25%;
+        border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+      }
+      50% {
+        translate: 0% 13%;
+        border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+        rotate: 41deg;
+        scale: 1.15;
+      }
+      100% {
+        translate: -45% 39%;
+        border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+        rotate: -60deg;
+        scale: 1.05;
+      }
+    }
+    
+    
+  #dskTopHeader{
+      display:none;
+  }
+  
+  #mobileNavLinks{
+      display:none;
+     }
+  
+     nav{
+      height:1vh;
+      background-color: rgba(233, 233, 233, 0.534);
+     
+  }
+  
+  #dskTopLogo{
+      display:none;
+  }
+  #mobileLogo{ 
+      display:none;
+      position: absolute;
+        margin-top:6vh;
+        margin-left:8vw;
+        font-family: "Kalnia", serif;
+        color:rgb(126, 126, 127);
+        font-size:0.80rem;
+  }
+  .navbar{
+      background-color: #ffffff5e;
+  }
+  
+  
+          .nav-menu {
+              position: fixed;
+              left: -100%;
+              top: 2rem;
+              flex-direction: column;
+              background-color: #fff !important;
+              height:16vh !important;
+              width: 100%;
+              border-radius: 10px;
+              text-align: center;
+              transition: 0.3s;
+              box-shadow:
+                  0 10px 27px rgba(0, 0, 0, 0.05);
+                  z-index:1 !important;
+                  font-weight: lighter;
+          }
+      
+          .nav-menu.active {
+              left: 0;
+          }
+  
+          .nav-item {
+              margin: 2.5rem 0;
+              margin-left:40vw;
+              font-size: 0.50rem;
+              font-weight: lighter !important;
+          }
+      
+          .hamburger {
+              display: block;
+              cursor: pointer;
+          }
+  .bar{
+      background-color: #868686a8;
+  }
+          .hamburger.active .bar:nth-child(2) {
+              opacity: 0;
+          }
+      
+          .hamburger.active .bar:nth-child(1) {
+              transform: translateY(8px) rotate(45deg);
+          }
+      
+          .hamburger.active .bar:nth-child(3) {
+              transform: translateY(-8px) rotate(-45deg);
+          }
+  
+  #nav-logo-desktop{
+      display:none;
+  }
+          #alchBrand{
+              margin-top: -59% !important;
+              margin-left:-9% !important;
+              width:10% !important;
+              height:10% !important;
+             }
+  
+             #bodycontact{
+              margin-left:26vw;
+             }
+  
+          #homeLink{
+              position: absolute;
+              margin-top:-12vh;
+              margin-left:-48vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+          #aboutLink{
+              position: absolute;
+              margin-top:-17vh;
+              margin-left:-45vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+       #missionLink{
+              position: absolute;
+              margin-top:-21vh;
+              margin-left:-45vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+        
+  
+          #bookLink{
+              margin-top:-26vh;
+              margin-left:-48vw !important;
+              font-size:.70rem;
+               padding:2% 10% 2% 10%;
+               border-style: groove;
+               border-color: #918f8f;
+               background-color:#fff;
+               border-radius: 25px ;
+               border-width:1px;
+                font-family: 'Pinyon Script', cursive;
+                color:#3d3d3d !important;
+               
+              }
+       
+             
+  
+          #contactLink{
+             display:none;
+  
+          }
+  
+          span{
+              color:#475569;
+          }
+  
+      #alchDesignLogo{
+          margin-top:-12vh !important;
+      }
+  
+  .nav-logo-mobile{
+      height: 50vh !important;
+  }
+  
+  #mainNav{
+      display:none;
+  }
+  
+  .logoImg{
+    position: absolute;
+    margin-top:-39vh;
+    margin-left:-45vw;
+    height:15vh;
+    width:90vw;
+  }
+  
+  
+  .logo{
+      display:none;
+      position: absolute;
+      margin-top:6vh;
+      margin-left:10vw;
+      color:rgba(94, 103, 111, 0.808);
+  
+  }
+                                                                              
+   h1{
+      position: absolute;
+    margin-top:-34vh;
+    margin-left:10vw;
+    font-size:1.5rem;
+      z-index:1;
+      color:#777777;
+      font-weight:lighter;
+      width:90vw;
+      animation: fadeInAnimation ease 5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      transition: opacity 5s;
+      z-index:-1;
+    
+     }
+  
+     @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  
+    #headerText1{
+      position:absolute;
+     margin-top:-150vh;
+      margin-left:6vw;
+      width:99vw;
+      color:white;
+      font-size:0.70rem;
+      
+    }
+  
+     #headerText2{
+      
+      position:absolute;
+      margin-top:-62vh;
+       margin-left:3vw;
+       width:100vw;
+        text-align: left;
+        font-size:0.86rem;
+        color:#3d3d3d;
+       font-weight:lighter;
+       z-index:1;
+       
+      }
+       
+      
+    
+    
+    .mobileHeaderUnderlay{
+     
+      height:100vh;
+   
+      z-index:-1;
+    }
+  
+    .underlay{
+      height:5vh;
+      width:70vw;
+     
+    }
+  
+    #underlay1{
+      position:absolute;
+      margin-top:15vh;
+         height:30vh;
+    }
+  
+     #underlay2{
+      display:none;
+      position: absolute;
+      margin-top:23vh;
+      height:10vh;
+      width:100vw;
+      background-color:gray;
+  
+     }
+     
+  #dskTopSlider{
+      display:none;
+  }
+  
+    
+  
+    img{height:15vh;
+        width:50vw;
+       }
+  
+       #fadeImgOne{
+          display:none;}
+       
+  
+       #mobileFadeImgOne{
+  
+          width:30vw;
+          height:60vh;
+       }
+       
+       #sectionTwo{
+        position: absolute;
+      margin-top:-26vh;
+      font-family: "Cormorant Garamond", serif;
+   font-weight: 300;
+    }
+      #sectionThree{
+        margin-top:-24vh;
+       
+      }
+  
+    /* Slideshow container */
+  .slideshow-container {
+      position: absolute;
+      margin-top:-30vh;
+    margin-left:21vw;
+    height:30vh;
+    max-width: 100vw;
+    
+    }
+  
+  #slideOne{
+    height:100vh !important;
+  }
+  
+  #slideTwo{
+     height:100vh;
+   }
+  
+  
+  
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    margin-top:-27vh !important;
+  
+    width: auto;
+   
+    padding: 6px;
+    color: rgb(93, 93, 93);
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+   
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    margin-top:-40vh;
+    margin-left:70vw;
+   
+    border-radius: 3px 0 0 3px;
+  }
+  
+    .prev{ 
+      margin-top:-40vh;
+      margin-left:-22vw;
+     
+    }
+  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    display:none;
+    margin-top:-30vh;
+  margin-left:63vw;
+    width:30vw;
+    font-size:14px;
+    
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  
+  .dot {
+      display:none;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-top:130vh !important;
+    margin-left:-30vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+    #stage {
+      margin: 1em auto;
+      width: 382px;
+      height: 292px;
+    }
+  
+  .fadeImg{
+    margin-top:-83vh;
+   margin-left:14vw;
+    height:26vh;
+    width:70vw;
+  }
+  
+    #stage a {
+      position: absolute;
+    }
+    #stage a img {
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+  
+    #stage a:nth-of-type(1) {
+      animation-name: fader;
+      animation-delay: 4s;
+      animation-duration: 1s;
+      z-index: 20;
+    }
+    #stage a:nth-of-type(2) {
+      z-index: 10;
+    }
+    #stage a:nth-of-type(n+3) {
+      display: none;
+    }
+  
+    @keyframes fader {
+      from { opacity: 1.0; }
+      to   { opacity: 0.0; }
+    }
+  
+    .offerHeader{
+      font-size:1.2rem;
+      margin-left:23vw;
+      color:rgb(82, 82, 82);
+      padding:10%;
+  
+    }
+  
+    .offerText{
+        margin-top:-3vh;
+      margin-left:-8vw;
+        width:99vw;
+        text-align: left;
+        font-size:0.56rem;
+        z-index:1;
+       
+        font-weight:lighter;
+        width:100vw;
+        padding:10%;
+       
+    }
+    
+  
+  
+    .projectTitle{
+      display:none;
+    margin-top:10vh;
+    margin-left:76vw;
+    font-size:2.5rem;
+    font-weight:lighter;
+    color:gray;
+    
+  }
+  
+    .price{
+      display:none;
+      margin-top:4vh;
+      margin-left:75vw;
+      font-size:2.5rem;
+     
+    }
+  footer{
+      height:400px;
+    margin-top:600px;
+    background-color:rgb(43, 56, 58);
+  
+  }
+
+
+
+
+}
+
+@media screen and (min-width:301px) and (max-width:360px){
+  body{
+       
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;}
+
+     
+   #lgMobileContainer{
+    display:none;
+   }
+  
+   
+  
+    .container {
+      position: absolute;
+      margin-top:1vh;
+      width: 100%;
+      height: 80vh;
+      position: relative;
+      display: grid;
+      place-items: center;
+      isolation: isolate;
+      overflow: hidden;
+    }
+    
+    
+    .blob {
+      position: absolute;
+      margin-top:-35vh;
+      opacity: 0.5;
+      width: 400px;
+      aspect-ratio: 1/1;
+      animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+        alternate forwards;
+      filter: blur(40px);
+      z-index: -1;
+      background: linear-gradient(
+        47deg,
+        rgb(20, 17, 18) 21%,
+        rgb(203, 226, 227) 67%,
+        rgb(71, 68, 74) 81%
+      );
+    
+      /*  Optional  */
+      /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+        inset 100px 100px 17px 0px #66319f; */
+    }
+    
+    @keyframes animate {
+      0% {
+        translate: 40% -25%;
+        border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+      }
+      50% {
+        translate: 0% 13%;
+        border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+        rotate: 41deg;
+        scale: 1.15;
+      }
+      100% {
+        translate: -45% 39%;
+        border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+        rotate: -60deg;
+        scale: 1.05;
+      }
+    }
+    
+    
+  #dskTopHeader{
+      display:none;
+  }
+  
+  #mobileNavLinks{
+      display:none;
+     }
+  
+     nav{
+      height:1vh;
+      background-color: rgba(233, 233, 233, 0.534);
+     
+  }
+  
+  #dskTopLogo{
+      display:none;
+  }
+  #mobileLogo{ 
+      display:none;
+      position: absolute;
+        margin-top:6vh;
+        margin-left:8vw;
+        font-family: "Kalnia", serif;
+        color:rgb(126, 126, 127);
+        font-size:0.80rem;
+  }
+  .navbar{
+      background-color: #ffffff5e;
+  }
+  
+  
+          .nav-menu {
+              position: fixed;
+              left: -100%;
+              top: 2rem;
+              flex-direction: column;
+              background-color: #fff !important;
+              height:16vh !important;
+              width: 100%;
+              border-radius: 10px;
+              text-align: center;
+              transition: 0.3s;
+              box-shadow:
+                  0 10px 27px rgba(0, 0, 0, 0.05);
+                  z-index:1 !important;
+                  font-weight: lighter;
+          }
+      
+          .nav-menu.active {
+              left: 0;
+          }
+  
+          .nav-item {
+              margin: 2.5rem 0;
+              margin-left:40vw;
+              font-size: 0.50rem;
+              font-weight: lighter !important;
+          }
+      
+          .hamburger {
+              display: block;
+              cursor: pointer;
+          }
+  .bar{
+      background-color: #868686a8;
+  }
+          .hamburger.active .bar:nth-child(2) {
+              opacity: 0;
+          }
+      
+          .hamburger.active .bar:nth-child(1) {
+              transform: translateY(8px) rotate(45deg);
+          }
+      
+          .hamburger.active .bar:nth-child(3) {
+              transform: translateY(-8px) rotate(-45deg);
+          }
+  
+  #nav-logo-desktop{
+      display:none;
+  }
+          #alchBrand{
+              margin-top: -59% !important;
+              margin-left:-9% !important;
+              width:10% !important;
+              height:10% !important;
+             }
+  
+             #bodycontact{
+              margin-left:26vw;
+             }
+  
+          #homeLink{
+              position: absolute;
+              margin-top:-12vh;
+              margin-left:-48vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+          #aboutLink{
+              position: absolute;
+              margin-top:-17vh;
+              margin-left:-45vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+       #missionLink{
+              position: absolute;
+              margin-top:-21vh;
+              margin-left:-45vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+        
+  
+          #bookLink{
+              margin-top:-26vh;
+              margin-left:-48vw !important;
+              font-size:.70rem;
+               padding:2% 10% 2% 10%;
+               border-style: groove;
+               border-color: #918f8f;
+               background-color:#fff;
+               border-radius: 25px ;
+               border-width:1px;
+                font-family: 'Pinyon Script', cursive;
+                color:#3d3d3d !important;
+               
+              }
+       
+             
+  
+          #contactLink{
+             display:none;
+  
+          }
+  
+          span{
+              color:#475569;
+          }
+  
+      #alchDesignLogo{
+          margin-top:-12vh !important;
+      }
+  
+  .nav-logo-mobile{
+      height: 50vh !important;
+  }
+  
+  #mainNav{
+      display:none;
+  }
+  
+  .logoImg{
+    position: absolute;
+    margin-top:-39vh;
+    margin-left:-45vw;
+    height:15vh;
+    width:90vw;
+  }
+  
+  
+  .logo{
+      display:none;
+      position: absolute;
+      margin-top:6vh;
+      margin-left:10vw;
+      color:rgba(94, 103, 111, 0.808);
+  
+  }
+                                                                              
+   h1{
+      position: absolute;
+    margin-top:-34vh;
+    margin-left:10vw;
+    font-size:1.5rem;
+      z-index:1;
+      color:#777777;
+      font-weight:lighter;
+      width:90vw;
+      animation: fadeInAnimation ease 5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      transition: opacity 5s;
+      z-index:-1;
+    
+     }
+  
+     @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  
+    #headerText1{
+      position:absolute;
+     margin-top:-150vh;
+      margin-left:6vw;
+      width:99vw;
+      color:white;
+      font-size:0.70rem;
+      
+    }
+  
+     #headerText2{
+      
+      position:absolute;
+      margin-top:-62vh;
+       margin-left:3vw;
+       width:100vw;
+        text-align: left;
+        font-size:0.86rem;
+        color:#3d3d3d;
+       font-weight:lighter;
+       z-index:1;
+       
+      }
+       
+      
+    
+    
+    .mobileHeaderUnderlay{
+     
+      height:100vh;
+   
+      z-index:-1;
+    }
+  
+    .underlay{
+      height:5vh;
+      width:70vw;
+     
+    }
+  
+    #underlay1{
+      position:absolute;
+      margin-top:15vh;
+         height:30vh;
+    }
+  
+     #underlay2{
+      display:none;
+      position: absolute;
+      margin-top:23vh;
+      height:10vh;
+      width:100vw;
+      background-color:gray;
+  
+     }
+     
+  #dskTopSlider{
+      display:none;
+  }
+  
+    
+  
+    img{height:15vh;
+        width:50vw;
+       }
+  
+       #fadeImgOne{
+          display:none;}
+       
+  
+       #mobileFadeImgOne{
+  
+          width:30vw;
+          height:60vh;
+       }
+       
+       #sectionTwo{
+        position: absolute;
+      margin-top:-26vh;
+      font-family: "Cormorant Garamond", serif;
+   font-weight: 300;
+    }
+      #sectionThree{
+        margin-top:-24vh;
+       
+      }
+  
+    /* Slideshow container */
+  .slideshow-container {
+      position: absolute;
+      margin-top:-30vh;
+    margin-left:21vw;
+    height:30vh;
+    max-width: 100vw;
+    
+    }
+  
+  #slideOne{
+    height:100vh !important;
+  }
+  
+  #slideTwo{
+     height:100vh;
+   }
+  
+  
+  
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    margin-top:-27vh !important;
+  
+    width: auto;
+   
+    padding: 6px;
+    color: rgb(93, 93, 93);
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+   
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    margin-top:-40vh;
+    margin-left:70vw;
+   
+    border-radius: 3px 0 0 3px;
+  }
+  
+    .prev{ 
+      margin-top:-40vh;
+      margin-left:-22vw;
+     
+    }
+  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    display:none;
+    margin-top:-30vh;
+  margin-left:63vw;
+    width:30vw;
+    font-size:14px;
+    
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  
+  .dot {
+      display:none;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-top:130vh !important;
+    margin-left:-30vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+    #stage {
+      margin: 1em auto;
+      width: 382px;
+      height: 292px;
+    }
+  
+  .fadeImg{
+    margin-top:-83vh;
+   margin-left:14vw;
+    height:26vh;
+    width:70vw;
+  }
+  
+    #stage a {
+      position: absolute;
+    }
+    #stage a img {
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+  
+    #stage a:nth-of-type(1) {
+      animation-name: fader;
+      animation-delay: 4s;
+      animation-duration: 1s;
+      z-index: 20;
+    }
+    #stage a:nth-of-type(2) {
+      z-index: 10;
+    }
+    #stage a:nth-of-type(n+3) {
+      display: none;
+    }
+  
+    @keyframes fader {
+      from { opacity: 1.0; }
+      to   { opacity: 0.0; }
+    }
+  
+    .offerHeader{
+      font-size:1.2rem;
+      margin-left:23vw;
+      color:rgb(82, 82, 82);
+      padding:10%;
+  
+    }
+  
+    .offerText{
+        margin-top:-3vh;
+      margin-left:-8vw;
+        width:99vw;
+        text-align: left;
+        font-size:0.56rem;
+        z-index:1;
+       
+        font-weight:lighter;
+        width:100vw;
+        padding:10%;
+       
+    }
+    
+  
+  
+    .projectTitle{
+      display:none;
+    margin-top:10vh;
+    margin-left:76vw;
+    font-size:2.5rem;
+    font-weight:lighter;
+    color:gray;
+    
+  }
+  
+    .price{
+      display:none;
+      margin-top:4vh;
+      margin-left:75vw;
+      font-size:2.5rem;
+     
+    }
+  footer{
+      height:400px;
+    margin-top:600px;
+    background-color:rgb(43, 56, 58);
+  
+  }
+
+
+
+}
+
+
+@media screen and (min-width:361px) and (max-width:400px){
+  body{
+       
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;}
+
+     
+   #lgMobileContainer{
+    display:none;
+   }
+  
+   
+  
+    .container {
+      position: absolute;
+      margin-top:1vh;
+      width: 100%;
+      height: 80vh;
+      position: relative;
+      display: grid;
+      place-items: center;
+      isolation: isolate;
+      overflow: hidden;
+    }
+    
+    
+    .blob {
+      position: absolute;
+      margin-top:-35vh;
+      opacity: 0.5;
+      width: 400px;
+      aspect-ratio: 1/1;
+      animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+        alternate forwards;
+      filter: blur(40px);
+      z-index: -1;
+      background: linear-gradient(
+        47deg,
+        rgb(20, 17, 18) 21%,
+        rgb(203, 226, 227) 67%,
+        rgb(71, 68, 74) 81%
+      );
+    
+      /*  Optional  */
+      /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+        inset 100px 100px 17px 0px #66319f; */
+    }
+    
+    @keyframes animate {
+      0% {
+        translate: 40% -25%;
+        border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+      }
+      50% {
+        translate: 0% 13%;
+        border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+        rotate: 41deg;
+        scale: 1.15;
+      }
+      100% {
+        translate: -45% 39%;
+        border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+        rotate: -60deg;
+        scale: 1.05;
+      }
+    }
+    
+    
+  #dskTopHeader{
+      display:none;
+  }
+  
+  #mobileNavLinks{
+      display:none;
+     }
+  
+     nav{
+      height:1vh;
+      background-color: rgba(233, 233, 233, 0.534);
+     
+  }
+  
+  #dskTopLogo{
+      display:none;
+  }
+  #mobileLogo{ 
+      display:none;
+      position: absolute;
+        margin-top:6vh;
+        margin-left:8vw;
+        font-family: "Kalnia", serif;
+        color:rgb(126, 126, 127);
+        font-size:0.80rem;
+  }
+  .navbar{
+      background-color: #ffffff5e;
+  }
+  
+  
+          .nav-menu {
+              position: fixed;
+              left: -100%;
+              top: 2rem;
+              flex-direction: column;
+              background-color: #fff !important;
+              height:16vh !important;
+              width: 100%;
+              border-radius: 10px;
+              text-align: center;
+              transition: 0.3s;
+              box-shadow:
+                  0 10px 27px rgba(0, 0, 0, 0.05);
+                  z-index:1 !important;
+                  font-weight: lighter;
+          }
+      
+          .nav-menu.active {
+              left: 0;
+          }
+  
+          .nav-item {
+              margin: 2.5rem 0;
+              margin-left:40vw;
+              font-size: 0.50rem;
+              font-weight: lighter !important;
+          }
+      
+          .hamburger {
+              display: block;
+              cursor: pointer;
+          }
+  .bar{
+      background-color: #868686a8;
+  }
+          .hamburger.active .bar:nth-child(2) {
+              opacity: 0;
+          }
+      
+          .hamburger.active .bar:nth-child(1) {
+              transform: translateY(8px) rotate(45deg);
+          }
+      
+          .hamburger.active .bar:nth-child(3) {
+              transform: translateY(-8px) rotate(-45deg);
+          }
+  
+  #nav-logo-desktop{
+      display:none;
+  }
+          #alchBrand{
+              margin-top: -59% !important;
+              margin-left:-9% !important;
+              width:10% !important;
+              height:10% !important;
+             }
+  
+             #bodycontact{
+              margin-left:26vw;
+             }
+  
+          #homeLink{
+              position: absolute;
+              margin-top:-12vh;
+              margin-left:-48vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+          #aboutLink{
+              position: absolute;
+              margin-top:-17vh;
+              margin-left:-45vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+       #missionLink{
+              position: absolute;
+              margin-top:-21vh;
+              margin-left:-45vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+        
+  
+          #bookLink{
+              margin-top:-26vh;
+              margin-left:-48vw !important;
+              font-size:.70rem;
+               padding:2% 10% 2% 10%;
+               border-style: groove;
+               border-color: #918f8f;
+               background-color:#fff;
+               border-radius: 25px ;
+               border-width:1px;
+                font-family: 'Pinyon Script', cursive;
+                color:#3d3d3d !important;
+               
+              }
+       
+             
+  
+          #contactLink{
+             display:none;
+  
+          }
+  
+          span{
+              color:#475569;
+          }
+  
+      #alchDesignLogo{
+          margin-top:-12vh !important;
+      }
+  
+  .nav-logo-mobile{
+      height: 50vh !important;
+  }
+  
+  #mainNav{
+      display:none;
+  }
+  
+  .logoImg{
+    position: absolute;
+    margin-top:-39vh;
+    margin-left:-45vw;
+    height:15vh;
+    width:90vw;
+  }
+  
+  
+  .logo{
+      display:none;
+      position: absolute;
+      margin-top:6vh;
+      margin-left:10vw;
+      color:rgba(94, 103, 111, 0.808);
+  
+  }
+                                                                              
+   h1{
+      position: absolute;
+    margin-top:-34vh;
+    margin-left:10vw;
+    font-size:1.5rem;
+      z-index:1;
+      color:#777777;
+      font-weight:lighter;
+      width:90vw;
+      animation: fadeInAnimation ease 5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      transition: opacity 5s;
+      z-index:-1;
+    
+     }
+  
+     @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  
+    #headerText1{
+      position:absolute;
+     margin-top:-150vh;
+      margin-left:6vw;
+      width:99vw;
+      color:white;
+      font-size:0.70rem;
+      
+    }
+  
+     #headerText2{
+      
+      position:absolute;
+      margin-top:-62vh;
+       margin-left:3vw;
+       width:100vw;
+        text-align: left;
+        font-size:0.86rem;
+        color:#3d3d3d;
+       font-weight:lighter;
+       z-index:1;
+       
+      }
+       
+      
+    
+    
+    .mobileHeaderUnderlay{
+     
+      height:100vh;
+   
+      z-index:-1;
+    }
+  
+    .underlay{
+      height:5vh;
+      width:70vw;
+     
+    }
+  
+    #underlay1{
+      position:absolute;
+      margin-top:15vh;
+         height:30vh;
+    }
+  
+     #underlay2{
+      display:none;
+      position: absolute;
+      margin-top:23vh;
+      height:10vh;
+      width:100vw;
+      background-color:gray;
+  
+     }
+     
+  #dskTopSlider{
+      display:none;
+  }
+  
+    
+  
+    img{height:15vh;
+        width:50vw;
+       }
+  
+       #fadeImgOne{
+          display:none;}
+       
+  
+       #mobileFadeImgOne{
+  
+          width:30vw;
+          height:60vh;
+       }
+       
+       #sectionTwo{
+        position: absolute;
+      margin-top:-26vh;
+      font-family: "Cormorant Garamond", serif;
+   font-weight: 300;
+    }
+      #sectionThree{
+        margin-top:-24vh;
+       
+      }
+  
+    /* Slideshow container */
+  .slideshow-container {
+      position: absolute;
+      margin-top:-30vh;
+    margin-left:21vw;
+    height:30vh;
+    max-width: 100vw;
+    
+    }
+  
+  #slideOne{
+    height:100vh !important;
+  }
+  
+  #slideTwo{
+     height:100vh;
+   }
+  
+  
+  
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    margin-top:-27vh !important;
+  
+    width: auto;
+   
+    padding: 6px;
+    color: rgb(93, 93, 93);
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+   
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    margin-top:-40vh;
+    margin-left:70vw;
+   
+    border-radius: 3px 0 0 3px;
+  }
+  
+    .prev{ 
+      margin-top:-40vh;
+      margin-left:-22vw;
+     
+    }
+  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    display:none;
+    margin-top:-30vh;
+  margin-left:63vw;
+    width:30vw;
+    font-size:14px;
+    
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  
+  .dot {
+      display:none;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-top:130vh !important;
+    margin-left:-30vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+    #stage {
+      margin: 1em auto;
+      width: 382px;
+      height: 292px;
+    }
+  
+  .fadeImg{
+    margin-top:-83vh;
+   margin-left:14vw;
+    height:26vh;
+    width:70vw;
+  }
+  
+    #stage a {
+      position: absolute;
+    }
+    #stage a img {
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+  
+    #stage a:nth-of-type(1) {
+      animation-name: fader;
+      animation-delay: 4s;
+      animation-duration: 1s;
+      z-index: 20;
+    }
+    #stage a:nth-of-type(2) {
+      z-index: 10;
+    }
+    #stage a:nth-of-type(n+3) {
+      display: none;
+    }
+  
+    @keyframes fader {
+      from { opacity: 1.0; }
+      to   { opacity: 0.0; }
+    }
+  
+    .offerHeader{
+      font-size:1.2rem;
+      margin-left:23vw;
+      color:rgb(82, 82, 82);
+      padding:10%;
+  
+    }
+  
+    .offerText{
+        margin-top:-3vh;
+      margin-left:-8vw;
+        width:99vw;
+        text-align: left;
+        font-size:0.56rem;
+        z-index:1;
+       
+        font-weight:lighter;
+        width:100vw;
+        padding:10%;
+       
+    }
+    
+  
+  
+    .projectTitle{
+      display:none;
+    margin-top:10vh;
+    margin-left:76vw;
+    font-size:2.5rem;
+    font-weight:lighter;
+    color:gray;
+    
+  }
+  
+    .price{
+      display:none;
+      margin-top:4vh;
+      margin-left:75vw;
+      font-size:2.5rem;
+     
+    }
+  footer{
+      height:400px;
+    margin-top:600px;
+    background-color:rgb(43, 56, 58);
+  
+  }
+
+
+
+}
+
+@media screen and (min-width:401px) and (max-width:560px){
+  body{
+       
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 300;}
+
+     
+   #lgMobileContainer{
+    display:none;
+   }
+  
+   
+  
+    .container {
+      position: absolute;
+      margin-top:1vh;
+      width: 100%;
+      height: 80vh;
+      position: relative;
+      display: grid;
+      place-items: center;
+      isolation: isolate;
+      overflow: hidden;
+    }
+    
+    
+    .blob {
+      position: absolute;
+      margin-top:-35vh;
+      opacity: 0.5;
+      width: 400px;
+      aspect-ratio: 1/1;
+      animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+        alternate forwards;
+      filter: blur(40px);
+      z-index: -1;
+      background: linear-gradient(
+        47deg,
+        rgb(20, 17, 18) 21%,
+        rgb(203, 226, 227) 67%,
+        rgb(71, 68, 74) 81%
+      );
+    
+      /*  Optional  */
+      /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+        inset 100px 100px 17px 0px #66319f; */
+    }
+    
+    @keyframes animate {
+      0% {
+        translate: 40% -25%;
+        border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+      }
+      50% {
+        translate: 0% 13%;
+        border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+        rotate: 41deg;
+        scale: 1.15;
+      }
+      100% {
+        translate: -45% 39%;
+        border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+        rotate: -60deg;
+        scale: 1.05;
+      }
+    }
+    
+    
+  #dskTopHeader{
+      display:none;
+  }
+  
+  #mobileNavLinks{
+      display:none;
+     }
+  
+     nav{
+      height:1vh;
+      background-color: rgba(233, 233, 233, 0.534);
+     
+  }
+  
+  #dskTopLogo{
+      display:none;
+  }
+  #mobileLogo{ 
+      display:none;
+      position: absolute;
+        margin-top:6vh;
+        margin-left:8vw;
+        font-family: "Kalnia", serif;
+        color:rgb(126, 126, 127);
+        font-size:0.80rem;
+  }
+  .navbar{
+      background-color: #ffffff5e;
+  }
+  
+  
+          .nav-menu {
+              position: fixed;
+              left: -100%;
+              top: 2rem;
+              flex-direction: column;
+              background-color: #fff !important;
+              height:16vh !important;
+              width: 100%;
+              border-radius: 10px;
+              text-align: center;
+              transition: 0.3s;
+              box-shadow:
+                  0 10px 27px rgba(0, 0, 0, 0.05);
+                  z-index:1 !important;
+                  font-weight: lighter;
+          }
+      
+          .nav-menu.active {
+              left: 0;
+          }
+  
+          .nav-item {
+              margin: 2.5rem 0;
+              margin-left:40vw;
+              font-size: 0.50rem;
+              font-weight: lighter !important;
+          }
+      
+          .hamburger {
+              display: block;
+              cursor: pointer;
+          }
+  .bar{
+      background-color: #868686a8;
+  }
+          .hamburger.active .bar:nth-child(2) {
+              opacity: 0;
+          }
+      
+          .hamburger.active .bar:nth-child(1) {
+              transform: translateY(8px) rotate(45deg);
+          }
+      
+          .hamburger.active .bar:nth-child(3) {
+              transform: translateY(-8px) rotate(-45deg);
+          }
+  
+  #nav-logo-desktop{
+      display:none;
+  }
+          #alchBrand{
+              margin-top: -59% !important;
+              margin-left:-9% !important;
+              width:10% !important;
+              height:10% !important;
+             }
+  
+             #bodycontact{
+              margin-left:26vw;
+             }
+  
+          #homeLink{
+              position: absolute;
+              margin-top:-12vh;
+              margin-left:-48vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+          #aboutLink{
+              position: absolute;
+              margin-top:-17vh;
+              margin-left:-45vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+       #missionLink{
+              position: absolute;
+              margin-top:-21vh;
+              margin-left:-45vw !important;
+              font-size: 1rem;
+              font-weight: lighter;
+              color:rgb(68, 68, 68);
+          }
+  
+        
+  
+          #bookLink{
+              margin-top:-26vh;
+              margin-left:-48vw !important;
+              font-size:.70rem;
+               padding:2% 10% 2% 10%;
+               border-style: groove;
+               border-color: #918f8f;
+               background-color:#fff;
+               border-radius: 25px ;
+               border-width:1px;
+                font-family: 'Pinyon Script', cursive;
+                color:#3d3d3d !important;
+               
+              }
+       
+             
+  
+          #contactLink{
+             display:none;
+  
+          }
+  
+          span{
+              color:#475569;
+          }
+  
+      #alchDesignLogo{
+          margin-top:-12vh !important;
+      }
+  
+  .nav-logo-mobile{
+      height: 50vh !important;
+  }
+  
+  #mainNav{
+      display:none;
+  }
+  
+  .logoImg{
+    position: absolute;
+    margin-top:-39vh;
+    margin-left:-45vw;
+    height:15vh;
+    width:90vw;
+  }
+  
+  
+  .logo{
+      display:none;
+      position: absolute;
+      margin-top:6vh;
+      margin-left:10vw;
+      color:rgba(94, 103, 111, 0.808);
+  
+  }
+                                                                              
+   h1{
+      position: absolute;
+    margin-top:-34vh;
+    margin-left:10vw;
+    font-size:1.5rem;
+      z-index:1;
+      color:#777777;
+      font-weight:lighter;
+      width:90vw;
+      animation: fadeInAnimation ease 5s;
+      animation-iteration-count: 1;
+      animation-fill-mode: forwards;
+      opacity: 0;
+      transition: opacity 5s;
+      z-index:-1;
+    
+     }
+  
+     @keyframes fadeInAnimation {
+      0% {
+          opacity: 0;
+      }
+      100% {
+          opacity: 1;
+      }
+  }
+  
+    #headerText1{
+      position:absolute;
+     margin-top:-150vh;
+      margin-left:6vw;
+      width:99vw;
+      color:white;
+      font-size:0.70rem;
+      
+    }
+  
+     #headerText2{
+      
+      position:absolute;
+      margin-top:-62vh;
+       margin-left:3vw;
+       width:100vw;
+        text-align: left;
+        font-size:0.86rem;
+        color:#3d3d3d;
+       font-weight:lighter;
+       z-index:1;
+       
+      }
+       
+      
+    
+    
+    .mobileHeaderUnderlay{
+     
+      height:100vh;
+   
+      z-index:-1;
+    }
+  
+    .underlay{
+      height:5vh;
+      width:70vw;
+     
+    }
+  
+    #underlay1{
+      position:absolute;
+      margin-top:15vh;
+         height:30vh;
+    }
+  
+     #underlay2{
+      display:none;
+      position: absolute;
+      margin-top:23vh;
+      height:10vh;
+      width:100vw;
+      background-color:gray;
+  
+     }
+     
+  #dskTopSlider{
+      display:none;
+  }
+  
+    
+  
+    img{height:15vh;
+        width:50vw;
+       }
+  
+       #fadeImgOne{
+          display:none;}
+       
+  
+       #mobileFadeImgOne{
+  
+          width:30vw;
+          height:60vh;
+       }
+       
+       #sectionTwo{
+        position: absolute;
+      margin-top:-26vh;
+      font-family: "Cormorant Garamond", serif;
+   font-weight: 300;
+    }
+      #sectionThree{
+        margin-top:-24vh;
+       
+      }
+  
+    /* Slideshow container */
+  .slideshow-container {
+      position: absolute;
+      margin-top:-30vh;
+    margin-left:21vw;
+    height:30vh;
+    max-width: 100vw;
+    
+    }
+  
+  #slideOne{
+    height:100vh !important;
+  }
+  
+  #slideTwo{
+     height:100vh;
+   }
+  
+  
+  
+  
+  /* Hide the images by default */
+  .mySlides {
+    display: none;
+  }
+  
+  /* Next & previous buttons */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    margin-top:-27vh !important;
+  
+    width: auto;
+   
+    padding: 6px;
+    color: rgb(93, 93, 93);
+    font-weight: bold;
+    font-size: 14px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+   
+  }
+  
+  /* Position the "next button" to the right */
+  .next {
+    margin-top:-40vh;
+    margin-left:70vw;
+   
+    border-radius: 3px 0 0 3px;
+  }
+  
+    .prev{ 
+      margin-top:-40vh;
+      margin-left:-22vw;
+     
+    }
+  
+  
+  /* On hover, add a black background color with a little bit see-through */
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+  
+  /* Caption text */
+  .text {
+    display:none;
+    margin-top:-30vh;
+  margin-left:63vw;
+    width:30vw;
+    font-size:14px;
+    
+  }
+  
+  /* Number text (1/3 etc) */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+  
+  /* The dots/bullets/indicators */
+  
+  .dot {
+      display:none;
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin-top:130vh !important;
+    margin-left:-30vw;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+  
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+  
+  /* Fading animation */
+  .fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+    #stage {
+      margin: 1em auto;
+      width: 382px;
+      height: 292px;
+    }
+  
+  .fadeImg{
+    margin-top:-83vh;
+   margin-left:14vw;
+    height:26vh;
+    width:70vw;
+  }
+  
+    #stage a {
+      position: absolute;
+    }
+    #stage a img {
+      padding: 10px;
+      border: 1px solid #ccc;
+      background: #fff;
+    }
+  
+    #stage a:nth-of-type(1) {
+      animation-name: fader;
+      animation-delay: 4s;
+      animation-duration: 1s;
+      z-index: 20;
+    }
+    #stage a:nth-of-type(2) {
+      z-index: 10;
+    }
+    #stage a:nth-of-type(n+3) {
+      display: none;
+    }
+  
+    @keyframes fader {
+      from { opacity: 1.0; }
+      to   { opacity: 0.0; }
+    }
+  
+    .offerHeader{
+      font-size:1.2rem;
+      margin-left:23vw;
+      color:rgb(82, 82, 82);
+      padding:10%;
+  
+    }
+  
+    .offerText{
+        margin-top:-3vh;
+      margin-left:-8vw;
+        width:99vw;
+        text-align: left;
+        font-size:0.56rem;
+        z-index:1;
+       
+        font-weight:lighter;
+        width:100vw;
+        padding:10%;
+       
+    }
+    
+  
+  
+    .projectTitle{
+      display:none;
+    margin-top:10vh;
+    margin-left:76vw;
+    font-size:2.5rem;
+    font-weight:lighter;
+    color:gray;
+    
+  }
+  
+    .price{
+      display:none;
+      margin-top:4vh;
+      margin-left:75vw;
+      font-size:2.5rem;
+     
+    }
+  footer{
+      height:400px;
+    margin-top:600px;
+    background-color:rgb(43, 56, 58);
+  
+  }
+
+
+
+
+}
+
+
+
+@media screen and (min-width:561px) and (max-width:640px){
+    body{
+        background-color:rgb(21, 190, 242);
+        font-family: "Cormorant Garamond", serif;
+        font-weight: 300;}
+
+      #mobileHeader{
+        display:none;
+      }
+      
+       
+      
+        .container {
+          position: absolute;
+          margin-top:2vh;
+          width: 100%;
+          height: 36vh;
+          position: relative;
+          display: grid;
+          place-items: center;
+          isolation: isolate;
+          overflow: hidden;
+        }
+        
+        
+        .blob {
+          position: absolute;
+          margin-top:-35vh;
+          opacity: 0.5;
+          width: 400px;
+          aspect-ratio: 1/1;
+          animation: animate 10s cubic-bezier(0.68, -0.55, 0.27, 1.55) infinite
+            alternate forwards;
+          filter: blur(40px);
+          z-index: -1;
+          background: linear-gradient(
+            47deg,
+            rgb(20, 17, 18) 21%,
+            rgb(203, 226, 227) 67%,
+            rgb(71, 68, 74) 81%
+          );
+        
+          /*  Optional  */
+          /*   box-shadow: inset 50px 50px 17px 0px #ff588b,
+            inset 100px 100px 17px 0px #66319f; */
+        }
+        
+        @keyframes animate {
+          0% {
+            translate: 40% -25%;
+            border-radius: 60% 40% 30% 70% / 100% 85% 92% 74%;
+          }
+          50% {
+            translate: 0% 13%;
+            border-radius: 20% 71% 47% 70% / 81% 15% 22% 54%;
+            rotate: 41deg;
+            scale: 1.15;
+          }
+          100% {
+            translate: -45% 39%;
+            border-radius: 100% 75% 92% 74% / 60% 80% 30% 70%;
+            rotate: -60deg;
+            scale: 1.05;
+          }
+        }
+        
+        
+      #dskTopHeader{
+          display:none;
+      }
+      
+      #mobileNavLinks{
+          display:none;
+         }
+      
+         nav{
+          height:1vh;
+          background-color: rgba(233, 233, 233, 0.534);
+         
+      }
+      
+      #dskTopLogo{
+          display:none;
+      }
+      #mobileLogo{ 
+          display:none;
+          position: absolute;
+            margin-top:6vh;
+            margin-left:8vw;
+            font-family: "Kalnia", serif;
+            color:rgb(126, 126, 127);
+            font-size:0.80rem;
+      }
+      .navbar{
+          background-color: #ffffff5e;
+      }
+      
+      
+              .nav-menu {
+                  position: fixed;
+                  left: -100%;
+                  top: 2rem;
+                  flex-direction: column;
+                  background-color: #fff !important;
+                  height:16vh !important;
+                  width: 100%;
+                  border-radius: 10px;
+                  text-align: center;
+                  transition: 0.3s;
+                  box-shadow:
+                      0 10px 27px rgba(0, 0, 0, 0.05);
+                      z-index:1 !important;
+                      font-weight: lighter;
+              }
+          
+              .nav-menu.active {
+                  left: 0;
+              }
+      
+              .nav-item {
+                  margin: 2.5rem 0;
+                  margin-left:40vw;
+                  font-size: 0.50rem;
+                  font-weight: lighter !important;
+              }
+          
+              .hamburger {
+                  display: block;
+                  cursor: pointer;
+              }
+      .bar{
+          background-color: #868686a8;
+      }
+              .hamburger.active .bar:nth-child(2) {
+                  opacity: 0;
+              }
+          
+              .hamburger.active .bar:nth-child(1) {
+                  transform: translateY(8px) rotate(45deg);
+              }
+          
+              .hamburger.active .bar:nth-child(3) {
+                  transform: translateY(-8px) rotate(-45deg);
+              }
+      
+      #nav-logo-desktop{
+          display:none;
+      }
+              #alchBrand{
+                  margin-top: -59% !important;
+                  margin-left:-9% !important;
+                  width:10% !important;
+                  height:10% !important;
+                 }
+      
+                 #bodycontact{
+                  margin-left:26vw;
+                 }
+      
+              #homeLink{
+                  position: absolute;
+                  margin-top:-12vh;
+                  margin-left:-48vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+              #aboutLink{
+                  position: absolute;
+                  margin-top:-17vh;
+                  margin-left:-45vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+           #missionLink{
+                  position: absolute;
+                  margin-top:-21vh;
+                  margin-left:-45vw !important;
+                  font-size: 1rem;
+                  font-weight: lighter;
+                  color:rgb(68, 68, 68);
+              }
+      
+            
+      
+              #bookLink{
+                  margin-top:-26vh;
+                  margin-left:-48vw !important;
+                  font-size:.70rem;
+                   padding:2% 10% 2% 10%;
+                   border-style: groove;
+                   border-color: #918f8f;
+                   background-color:#fff;
+                   border-radius: 25px ;
+                   border-width:1px;
+                    font-family: 'Pinyon Script', cursive;
+                    color:#3d3d3d !important;
+                   
+                  }
+           
+                 
+      
+              #contactLink{
+                 display:none;
+      
+              }
+      
+              span{
+                  color:#475569;
+              }
+      
+          #alchDesignLogo{
+              margin-top:-12vh !important;
+          }
+      
+      .nav-logo-mobile{
+          height: 50vh !important;
+      }
+      
+      #mainNav{
+          display:none;
+      }
+      
+      
+      
+      .logo{
+          display:none;
+          position: absolute;
+          margin-top:6vh;
+          margin-left:10vw;
+          color:rgba(94, 103, 111, 0.808);
+      
+      }
+                                                                                  
+       h1{
+          position: absolute;
+        margin-top:-34vh;
+        margin-left:10vw;
+        font-size:0.90rem;
+          z-index:1;
+          color:#777777;
+          font-weight:lighter;
+          width:90vw;
+          animation: fadeInAnimation ease 5s;
+          animation-iteration-count: 1;
+          animation-fill-mode: forwards;
+          opacity: 0;
+          transition: opacity 5s;
+          z-index:-1;
+        
+         }
+      
+         @keyframes fadeInAnimation {
+          0% {
+              opacity: 0;
+          }
+          100% {
+              opacity: 1;
+          }
+      }
+      
+        #headerText1{
+          position:absolute;
+         margin-top:-150vh;
+          margin-left:6vw;
+          width:99vw;
+          color:white;
+          font-size:0.70rem;
+          
+        }
+      
+         #headerText2{
+          
+          position:absolute;
+          margin-top:3vh;
+           margin-left:2vw;
+           width:100vw;
+            text-align: left;
+            font-size:0.56rem;
+            color:#3d3d3d;
+           font-weight:lighter;
+           z-index:1;
+           
+          }
+           
+          
+        
+        
+        .mobileHeaderUnderlay{
+         
+          height:100vh;
+       
+          z-index:-1;
+        }
+      
+        .underlay{
+          height:5vh;
+          width:70vw;
+         
+        }
+      
+        #underlay1{
+          position:absolute;
+          margin-top:15vh;
+             height:30vh;
+        }
+      
+         #underlay2{
+          display:none;
+          position: absolute;
+          margin-top:23vh;
+          height:10vh;
+          width:100vw;
+          background-color:gray;
+      
+         }
+         
+      #dskTopSlider{
+          display:none;
+      }
+      
+        
+      
+        img{height:70vh;
+            width:50vw;
+           }
+      
+           #fadeImgOne{
+              display:none;}
+           
+      
+           #mobileFadeImgOne{
+      
+              width:30vw;
+              height:60vh;
+           }
+           
+      #sectionTwo{
+          
+        margin-top:10vh;
+      }
+        #sectionThree{
+          margin-top:-66vh;
+         
+        }
+      
+        /* Slideshow container */
+      .slideshow-container {
+          position: absolute;
+          margin-top:-30vh;
+        margin-left:-3vw;
+        height:30vh;
+        max-width: 100vw;
+        
+        }
+      
+      #slideOne{
+        height:100vh !important;
+      }
+      
+      #slideTwo{
+         height:100vh;
+       }
+      
+      
+      
+      
+      /* Hide the images by default */
+      .mySlides {
+        display: none;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        margin-top:-110vh !important;
+      
+        width: auto;
+       
+        padding: 6px;
+        color: white;
+        font-weight: bold;
+        font-size: 14px;
+        transition: 0.6s ease;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+        background-color:pink;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        margin-top:-40vh;
+        margin-left:88vw;
+         background-color:#585c5c;
+        border-radius: 3px 0 0 3px;
+      }
+      
+        .prev{ 
+          margin-top:-40vh;
+          margin-left:0vw;
+          background-color:#585c5c;
+        }
+      
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgba(0,0,0,0.8);
+      }
+      
+      /* Caption text */
+      .text {
+        display:none;
+        margin-top:-30vh;
+      margin-left:63vw;
+        width:30vw;
+        font-size:14px;
+        
+      }
+      
+      /* Number text (1/3 etc) */
+      .numbertext {
+        color: #f2f2f2;
+        font-size: 12px;
+        padding: 8px 12px;
+        position: absolute;
+        top: 0;
+      }
+      
+      /* The dots/bullets/indicators */
+      
+      .dot {
+          display:none;
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin-top:130vh !important;
+        margin-left:-30vw;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Fading animation */
+      .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+      }
+      
+      @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+      }
+      
+        #stage {
+          margin: 1em auto;
+          width: 382px;
+          height: 292px;
+        }
+      
+      .fadeImg{
+        margin-top:-70vh;
+       margin-left:7vw;
+        height:20vh;
+        width:100vw;
+      }
+      
+        #stage a {
+          position: absolute;
+        }
+        #stage a img {
+          padding: 10px;
+          border: 1px solid #ccc;
+          background: #fff;
+        }
+      
+        #stage a:nth-of-type(1) {
+          animation-name: fader;
+          animation-delay: 4s;
+          animation-duration: 1s;
+          z-index: 20;
+        }
+        #stage a:nth-of-type(2) {
+          z-index: 10;
+        }
+        #stage a:nth-of-type(n+3) {
+          display: none;
+        }
+      
+        @keyframes fader {
+          from { opacity: 1.0; }
+          to   { opacity: 0.0; }
+        }
+      
+        .offerHeader{
+          font-size:1.2rem;
+          margin-left:6vw;
+          color:rgb(82, 82, 82);
+          padding:10%;
+      
+        }
+      
+        .offerText{
+          margin-left:2vw;
+            width:99vw;
+            text-align: left;
+            font-size:0.56rem;
+            z-index:1;
+           
+            font-weight:lighter;
+            width:100vw;
+            padding:10%;
+           
+        }
+        
+      
+      
+        .projectTitle{
+          display:none;
+        margin-top:10vh;
+        margin-left:70vw;
+        font-size:2.5rem;
+        font-weight:lighter;
+        color:gray;
+        
+      }
+      
+        .price{
+          display:none;
+          margin-top:4vh;
+          margin-left:75vw;
+          font-size:2.5rem;
+         
+        }
+      footer{
+          height:400px;
+        margin-top:600px;
+        background-color:rgb(43, 56, 58);
+      
+      }
+
+
+}
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:641px){
+  body{
+    background-color:white;
+    font-family: "Josefin Slab", serif;
+    
+  }
+
+  #lgMobileContainer{
+    display:none;
+  }
+   header{
+    background-color:white;
+    height:90vh;
+    font-family: "Playfair Display", serif;
+  }
+
+
+  /* NAVBAR STYLING STARTS */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgba(27, 24, 36, 0.837);
+    color: #fff;
+  }
+  
+  .nav-links a {
+    color: #fff;
+  }
+  
+  /* LOGO */
+  .logo {
+    font-size: 32px;
+  }
+  
+  /* NAVBAR MENU */
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 18px;
+  }
+  
+  .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+  }
+  
+  .menu li {
+    padding: 5px 14px;
+  }
+  
+  /* DROPDOWN MENU */
+  .services {
+    position: relative; 
+  }
+  
+  .dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; /*WITH RESPECT TO PARENT*/
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+  }
+  
+  .dropdown li + li {
+    margin-top: 10px;
+  }
+  
+  .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+  }
+  
+  .dropdown li:hover {
+    background-color: #c2c2c26c;
+  }
+  
+  .services:hover .dropdown {
+    display: block;
+  }
+
+  input[type=checkbox] {
+    display: none;
+  } 
+  
+  /* HAMBURGER MENU */
+  .hamburger {
+    display: none;
+    font-size: 24px;
+    user-select: none;
+  }
+
+  #miniNav{
+    display:none;
+  }
+  
+#mobileHeader{
+    display:none;
+}
+
+
+  h1{
+    margin-top:4vh;
+    margin-left:7vw;
+     width:38vw;
+   font-family: "Playfair Display", serif;
+    font-size:3.3rem;
+    font-weight:lighter;
+    color:black;
+   
+    }
+
+  
+  #headerImg1{
+    margin-top:-25vh;
+    margin-left:55vw;
+    height:30vh;
+    width:35vw;
+  }
+
+  h2{
+    margin-top:8vh;
+    margin-left:54vw;
+     width:40vw;
+    font-family: "Playfair Display", serif;
+      font-size:2.3rem;
+    font-weight:lighter;
+    color:black;
+   
+   
+  }
+    
+   #headerImg2{
+     margin-top:-32vh;
+    margin-left:6vw;
+      height:30vh;
+    width:35vw;
+  }
+
+  
+
+  #sectionTwo{
+    display:flex;
+    margin-top:-7vh;
+    height:40vh;
+    background-color:#6ba298;
+  }
+
+ 
+  
+#offerHeader1{
+  position:absolute;
+  margin-top:10vh;
+    margin-left:6vw;
+  font-size:2.5rem;
+  font-weight:lighter;
+  color:white;
+
+}
+  
+  #offerText1{
+     position:absolute;
+      margin-top:20vh;
+     margin-left:4vw;
+     width:32vw;
+     color:white;
+   
+  }
+
+  #offerHeader2{
+     position:absolute;
+  margin-top:10vh;
+    margin-left:44vw;
+  font-size:2.5rem;
+    font-weight:lighter;
+    color:white;
+
+}
+
+   #offerText2{
+      position:absolute;
+     margin-top:20vh;
+       margin-left:38vw;
+    width:30vw;
+     color:white;
+    
+  }
+
+  
+  #offerHeader3{
+  margin-top:10vh;
+    margin-left:76vw;
+  font-size:2.5rem;
+       font-weight:lighter;
+    color:white;
+
+}
+
+   #offerText3{
+      margin-top:4vh;
+     margin-left:70vw;
+    width:30vw;
+     font-weight:lighter;
+    color:white;
+  }
+
+
+  #sectionThree{
+    display:flex;
+  
+    
+  }
+
+  #stage {
+    margin: 1em auto;
+    width: 382px;
+    height: 292px;
+  }
+
+  #stage a {
+    position: absolute;
+  }
+  #stage a img {
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: #fff;
+  }
+
+  #stage a:nth-of-type(1) {
+    animation-name: fader;
+    animation-delay: 4s;
+    animation-duration: 1s;
+    z-index: 20;
+  }
+  #stage a:nth-of-type(2) {
+    z-index: 10;
+  }
+  #stage a:nth-of-type(n+3) {
+    display: none;
+  }
+
+  @keyframes fader {
+    from { opacity: 1.0; }
+    to   { opacity: 0.0; }
+  }
+
+
+
+.sectionTitle{
+  margin-top:29vh;
+  margin-left:60vw;
+  font-size:3.4rem;
+}
+
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+.projectTitle{
+  margin-top:10vh;
+  margin-left:70vw;
+  font-size:2.5rem;
+  font-weight:lighter;
+  
+}
+
+  .price{
+    margin-top:4vh;
+    margin-left:75vw;
+    font-size:2.5rem;
+   
+  }
+
+#footer{
+  height:30vh;
+  background-color:gray;
+}
+
+
+}
+  
